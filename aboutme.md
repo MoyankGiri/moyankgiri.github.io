@@ -1,10 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: IIT Bhilai Mtech Data Science & AI (Completing in June 2025) , BTech in CSE from PES with a Specialization in "Machine Intelligence and Data Science"
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Moyank Giri. I have the following qualities:
 
 - I rock a great mustache
 - I'm extremely loyal to my family
