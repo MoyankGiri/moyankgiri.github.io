@@ -11,8 +11,6 @@ Graduated in CSE with a specialization in "Machine Intelligence and Data Science
 
 Authored 2 papers (One Journal and One IEEE Conference) and worked in 10+ projects in the field of Data Science. Represented IIT Bhilai in the Inter-IIT Tech Meet 2023. Also been awarded scholarships during my B.Tech
 
-What else do you need?
-
 ### Technical Skills
 * **Programming Languages**: Python, R, MATLAB, C, Java
 * **Tools and Databases**: Docker, Kubernetes, AWS, Prometheus, Grafana, Hadoop, Spark, Kafka, Storm, PostgreSQL, MongoDB, Qdrant VectorDB, Hive, Linux
