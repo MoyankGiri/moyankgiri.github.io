@@ -18,7 +18,7 @@ Authored 2 papers (One Journal and One IEEE Conference) and worked in 10+ projec
 
 ### EDUCATION
 
-### 1. The Ohio State University, USA M.Tech Thesis Research (2024 – 2025)
+#### 1. The Ohio State University, USA M.Tech Thesis Research (2024 – 2025)
 - Sponsored by OSU (AI Edge Institute) as J1 Research Scholar from IIT Bhilai
 - **Research Domain:** AI Edge, Split Learning, LLMs, Fine-tuning
 
