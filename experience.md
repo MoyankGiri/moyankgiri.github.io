@@ -15,9 +15,8 @@ MatPlotLib, Pandas, NumPy, Transformers
 
 ### 1. Research Scholar at Ohio State University, USA
 **Duration:** Onsite, $30000 /year (June 2024 - Present)
-**Technical Skills:** Split Learning, Python
-- **Summary:**
-  - Improving Training and customization of LLM architecture for efficient execution/ deployment on Edge devices using systems approaches like caching, pipelining, quantization or ML techniques like boosting/distillation.
+- **Technical Skills:** Split Learning, Python
+- **Summary:** Improving Training and customization of LLM architecture for efficient execution/ deployment on Edge devices using systems approaches like caching, pipelining, quantization or ML techniques like boosting/distillation.
 
 ### 2. Researcher and Teaching Assistant at IIT Bhilai
 **Duration:** 1 year, Part-time, Onsite, Paid (Aug 2023 - June 2024)
