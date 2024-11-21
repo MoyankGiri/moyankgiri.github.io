@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Moyank Giri
-subtitle: IIT Bhilai M.Tech Data Science & AI (Completing in June 2025) , BTech in CSE from PES with a Specialization in "Machine Intelligence and Data Science"
+subtitle: Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning | Master's in Data Science & AI from Ohio State University (USA) & IIT Bhilai (India)
 ---
 # Skills
 ### Technical Skills
@@ -11,7 +11,7 @@ subtitle: IIT Bhilai M.Tech Data Science & AI (Completing in June 2025) , BTech 
 MatPlotLib, Pandas, NumPy, Transformers
 * **DL/ML Techniques**: Computer Vision, NLP, Advanced RAG, Split Learning, Federated Learning, Generative AI, LLM, Explainable AI, CNN, LSTM/RNN, Distributed Deep Learning, ETL, Data Modeling and Mining
 
-# Experience (1.5 Years)
+# Experience (2+ Years as Trainee, Intern, TA)
 
 ### 1. Research Scholar at Ohio State University, USA
 **Duration:** Onsite, $30000 /year (June 2024 - Present)

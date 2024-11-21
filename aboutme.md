@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Moyank Giri
-subtitle: IIT Bhilai M.Tech Data Science & AI (Completing in June 2025) , BTech in CSE from PES with a Specialization in "Machine Intelligence and Data Science"
+subtitle: Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning | Master's in Data Science & AI from Ohio State University (USA) & IIT Bhilai (India)
 ---
 
 ### CONTACT DETAILS
