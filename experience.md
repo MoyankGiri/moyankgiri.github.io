@@ -12,7 +12,7 @@ MatPlotLib, Pandas, NumPy, Transformers
 * **DL/ML Techniques**: Computer Vision, NLP, Advanced RAG, Split Learning, Federated Learning, Generative AI, LLM, Explainable AI, CNN, LSTM/RNN, Distributed Deep Learning, ETL, Data Modeling and Mining
 * **Courses**: Machine Learning, Adversarial Machine Learning, Advanced Data Structure & Algorithm, Parallelization of Programs, Computer System Design, Machine Intelligence, Database Management System, Computer vision and Image processing, Data analytics, Statistics for Data Science,Data structures and its applications, Cloud Computing, Automated Information Retreival etc
 
-# Experience (2+ Years as Trainee, Intern, TA)
+# Experience (2+ Years as Research Scholar, Trainee, Intern, TA)
 
 ### 1. Research Scholar at Ohio State University, USA
 **Duration:** Onsite, $30000 /year (June 2024 - Feb 2025)
