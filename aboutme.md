@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Moyank Giri
-subtitle: Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning | Master's in Data Science & AI from Ohio State University (USA) & IIT Bhilai (India)
+subtitle: <b>IITian|Ex-OSU,USA|Ex-HPE</b><br> Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
 ---
 
 ### CONTACT DETAILS

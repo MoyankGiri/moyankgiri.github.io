@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Moyank Giri
-subtitle: Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning | Master's in Data Science & AI from Ohio State University (USA) & IIT Bhilai (India)
+subtitle: <b>IITian|Ex-OSU,USA|Ex-HPE</b><br> Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
 ---
 # Skills
 ### Technical Skills
@@ -10,13 +10,14 @@ subtitle: Machine Learning & AI Specialist | Expert in Python, Deep Learning, LL
 * **Python Libraries**: HuggingFace, PyTorch, Tensorflow, SKLearn, LIME, OpenCV, FastAPI,
 MatPlotLib, Pandas, NumPy, Transformers
 * **DL/ML Techniques**: Computer Vision, NLP, Advanced RAG, Split Learning, Federated Learning, Generative AI, LLM, Explainable AI, CNN, LSTM/RNN, Distributed Deep Learning, ETL, Data Modeling and Mining
+* **Courses**: Machine Learning, Adversarial Machine Learning, Advanced Data Structure & Algorithm, Parallelization of Programs, Computer System Design, Machine Intelligence, Database Management System, Computer vision and Image processing, Data analytics, Statistics for Data Science,Data structures and its applications, Cloud Computing, Automated Information Retreival etc
 
 # Experience (2+ Years as Trainee, Intern, TA)
 
 ### 1. Research Scholar at Ohio State University, USA
-**Duration:** Onsite, $30000 /year (June 2024 - Present)
-- **Technical Skills:** Split Learning, Python
-- **Summary:** Improving Training and customization of LLM architecture for efficient execution/ deployment on Edge devices using systems approaches like caching, pipelining, quantization or ML techniques like boosting/distillation.
+**Duration:** Onsite, $30000 /year (June 2024 - Feb 2025)
+- **Technical Skills:** Python, LLM, LoRA, NLP, Huggingface, Transformers, Pytorch and Numpy
+- **Summary:** Utilized Python, LLM, LoRA, NLP, and Supercomputing environment, along with libraries like Huggingface, Transformers, Pytorch, and Numpy, to work on the efficient finetuning of LLMs in collaboration with industry experts using layer selection strategies and skip connections, resulting in a 10% reduction in finetuning time and significant savings in computational resources.
 
 ### 2. Researcher and Teaching Assistant at IIT Bhilai
 **Duration:** 1 year, Part-time, Onsite, Paid (Aug 2023 - June 2024)
