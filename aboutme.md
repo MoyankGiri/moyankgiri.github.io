@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Moyank Giri
-subtitle: >
-IITian | Ex-OSU,USA | Ex-HPE
-Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
+subtitle: IITian | Ex-OSU,USA | Ex-HPE | ********************************************************************** Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
 ---
 
 ### CONTACT DETAILS
