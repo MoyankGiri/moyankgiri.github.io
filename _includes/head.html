@@ -21,15 +21,15 @@
   {% endcapture %}
 
   {% capture description %}
-    {%- if page.share-description -%}
-      {{ page.share-description | strip_html | xml_escape }}
-    {%- elsif page.subtitle -%}
-      {{ page.subtitle | strip_html | xml_escape }}
-    {%- else -%}
-      {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
-    {%- endif -%}
-  {% endcapture %}
+  {%- if page.share-description -%}
+    {{ page.share-description | strip_html | xml_escape | newline_to_br }}
+  {%- elsif page.subtitle -%}
+    {{ page.subtitle | strip_html | xml_escape | newline_to_br }}
+  {%- else -%}
+    {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
+    {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip | newline_to_br }}
+  {%- endif -%}
+{% endcapture %}
 
   <title>{{ title }}</title>
 
