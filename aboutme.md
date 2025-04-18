@@ -5,33 +5,33 @@ subtitle: IITian | Ex-OSU,USA | Ex-HPE | 2 YOE *********************************
 ---
 
 ### CONTACT DETAILS
-- **Email:** [moyank110@gmail.com](mailto:moyank110@gmail.com)
-- **Phone:** +91 7353079403, +1 6147490813
+- **Email:** [moyankg@iitbhilai.ac.in](mailto:moyankg@iitbhilai.ac.in), [moyank110@gmail.com](mailto:moyank110@gmail.com)
+- **Phone:** +91 7353079403
 - **GitHub:** [https://github.com/MoyankGiri](https://github.com/MoyankGiri)
 - **LinkedIn:** [https://www.linkedin.com/in/moyankgiri/](https://www.linkedin.com/in/moyankgiri/)
 - **Preferred Work Location:** Bengaluru, India
 
 ### ABOUT ME
-Currently pursuing M.Tech at IIT BHILAI in the field of DSAI (with GATE 2023) and scored 9.12 CGPA till completion of 1st Semester. Research interests include "Development of State-of-the-art Efficient Learning Models for Edge Networks" and "Detecting and Solving ’Out-of-Order Distribution’ problem" currently being researched.<br>
-Graduated in CSE with a specialization in "Machine Intelligence and Data Science" with 9.0 CGPA and 2 Full-Time Employment offers of 17+ LPA from Hewlett Packard Enterprises (R&D, India) and Muxable Labs, USA (India)<br>
-Authored 2 papers (One Journal and One IEEE Conference) and worked in 10+ projects in the field of Data Science. Represented IIT Bhilai in the Inter-IIT Tech Meet 2023. Also been awarded scholarships during my B.Tech
+Hi, I'm **Moyank Giri**, an M.Tech student specializing in **Data Science and Artificial Intelligence** at **IIT Bhilai**. I also served as a **Research Scholar at The Ohio State University (USA)**, where I conducted my thesis research over a span of 8 months.
+
+With **2 years of experience** and **4 publications**—including **two A* conference papers** and a **peer-reviewed journal article**—my work bridges the gap between cutting-edge research and practical AI solutions. My core expertise lies in **Machine Learning, Natural Language Processing (NLP), Generative AI, Edge AI**, and **Data Science**.
+
+I’m currently based in **Bangalore** and am eager to explore challenging **AI/ML roles** where I can contribute meaningfully and continue learning.
+
+📄 [View My Resume](https://tinyurl.com/ResumeMoyank)
 
 ### EDUCATION
 
-#### 1. The Ohio State University, USA M.Tech Thesis Research (2024 – 2025)
-- Sponsored by OSU (AI Edge Institute) as J1 Research Scholar from IIT Bhilai
-- **Research Domain:** AI Edge, Split Learning, LLMs, Fine-tuning
-
-#### 2. M.Tech: IIT Bhilai in Data Science & Artificial Intelligence (2023 – 2025)
-- **CGPA:** 9.12 / 10 (Till 2nd Semester)
+#### 1. M.Tech: IIT Bhilai in Data Science & Artificial Intelligence (2023 – 2025)
+- **CGPA:** 9.45 / 10 (Till 3rd Semester)
 - **Date of Completion:** June 2025
 - **Relevant Courses:** Machine Learning, Adversarial Machine Learning, Advanced Data Structure & Algorithm, Parallelization of Programs, Computer System Design, etc.
 
-#### 3. B.Tech: PES University in Computer Science & Engineering (2019 - 2023)
+#### 2. B.Tech: PES University in Computer Science & Engineering (2019 - 2023)
 - **CGPA:** 9.0 / 10 with Specialization in "Machine Intelligence and Data Science"
 - **Relevant Courses:** Machine Intelligence, Database Management System, Computer Vision and Image Processing, Data Analytics, Statistics for Data Science, Data Structures and its Applications, Cloud Computing, Automated Information Retrieval, etc.
 
-#### 4. PUC and 10th
+#### 3. PUC and 10th
 - **Marks:** 90.6% (PUC), 10/10 (10th)
 - **Passout:** 2017 (PUC), 2019 (10th)
 
