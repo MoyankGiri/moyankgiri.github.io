@@ -20,12 +20,12 @@ author: Moyank Giri
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Projects: "projects"
+  Experience: "experience"
+  Academics: "academics"
+  Publications and Projects: "projects"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
   #   - Learn markdown: "https://www.markdowntutorial.com/"
-  Experience: "experience"
 
 ################
 # --- Logo --- #
