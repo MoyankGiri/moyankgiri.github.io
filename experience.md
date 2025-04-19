@@ -15,32 +15,24 @@ MatPlotLib, Pandas, NumPy, Transformers
 # Experience (2+ Years as Research Scholar, Trainee, Intern, TA)
 
 ### 1. Research Scholar at Ohio State University, USA
-**Duration:** Onsite, $30000 /year (June 2024 - Feb 2025)
+**Duration:** 8 Months, Full-time, Onsite, Paid (June 2024 - Feb 2025)
 - **Technical Skills:** Python, LLM, LoRA, NLP, Huggingface, Transformers, Pytorch and Numpy
 - **Summary:** Utilized Python, LLM, LoRA, NLP, and Supercomputing environment, along with libraries like Huggingface, Transformers, Pytorch, and Numpy, to work on the efficient finetuning of LLMs in collaboration with industry experts using layer selection strategies and skip connections, resulting in a 10% reduction in finetuning time and significant savings in computational resources.
 
-### 2. Researcher and Teaching Assistant at IIT Bhilai
+### 2. Teaching Assistant at Big Data Technologies Lab, IIT Bhilai
 **Duration:** 1 year, Part-time, Onsite, Paid (Aug 2023 - June 2024)
-
-#### 2.1. Researcher at Sigma-Cubed Lab (S3 Lab)
-- **Technical Skills:** Auto-encoder, ResNet18, ImageNet, LLM, NLP, Vector Database, Advanced RAG, Distributed Deep Learning, Python Libraries (Pytorch, Matplotlib, etc.)
-- **Summary:** 
-  - Creating an Efficient Split Learning Architecture to reduce communication and address the issue of "Out-of-Order Distribution".
-  - Developing an Efficient Advanced RAG retrieval system for Finetuning LLM for network troubleshooting using open-source efficient models and self-hosted databases.
-
-#### 2.2. Teaching Assistant for Big Data Analytics Lab
 - **Technical Skills:** Hadoop, Hive, Spark, Storm, Kafka, Docker, AWS, Python, Java, etc.
 - **Summary:** Configured and Validated Big Data Environments on AWS and Conducted Tutorials, Hands-on Lab Sessions on Big Data Technologies.
 
 ### 3. Trainee at Hewlett Packard Enterprise (HPE, R&D, India)
 **Duration:** 6 Months, Full-time, Onsite, Paid (Jan 2023 - July 2023)
-- Converted to Full-Time Employment with 17.5 LPA CTC.
+- Converted to Full-Time Employment
 - **Technical Skills:** Python Libraries (threading, ThreadPoolExecutor, etc.)
 - **Summary:** Developed an End-to-End workflow using Python in HPE Storage framework to optimize execution time, resulting in more than 70% improvement.
 
 ### 4. Summer Intern at Muxable Labs USA (India)
 **Duration:** 2 Months, Full-time, Remote, Paid (June 2022 – July 2022)
-- Converted to Full-Time Employment with Rs 13.2 LPA + RSU of $10,000.
+- Converted to Full-Time Employment
 - **Technical Skills:** Golang, Wireshark.
 - **Summary:** Implemented CMT-SCTP protocol following IETF Specifications for video streaming with minimum loss and latency.
 

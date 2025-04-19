@@ -4,22 +4,6 @@ title: Moyank Giri
 subtitle: IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ************************************************* Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
 ---
 
-### CONTACT DETAILS
-- **Email:** [moyankg@iitbhilai.ac.in](mailto:moyankg@iitbhilai.ac.in), [moyank110@gmail.com](mailto:moyank110@gmail.com)
-- **Phone:** +91 7353079403
-- **GitHub:** [https://github.com/MoyankGiri](https://github.com/MoyankGiri)
-- **LinkedIn:** [https://www.linkedin.com/in/moyankgiri/](https://www.linkedin.com/in/moyankgiri/)
-- **Preferred Work Location:** Bengaluru, India
-
-### ABOUT ME
-Hi, I'm **Moyank Giri**, an M.Tech student specializing in **Data Science and Artificial Intelligence** at **IIT Bhilai**. I also served as a **Research Scholar at The Ohio State University (USA)**, where I conducted my thesis research over a span of 8 months.
-
-With **2 years of experience** and **4 publications**—including **two A* conference papers** and a **peer-reviewed journal article**—my work bridges the gap between cutting-edge research and practical AI solutions. My core expertise lies in **Machine Learning, Natural Language Processing (NLP), Generative AI, Edge AI**, and **Data Science**.
-
-I’m currently based in **Bangalore** and am eager to explore challenging **AI/ML roles** where I can contribute meaningfully and continue learning.
-
-📄 [View My Resume](https://tinyurl.com/ResumeMoyank)
-
 ### EDUCATION
 
 #### 1. M.Tech: IIT Bhilai in Data Science & Artificial Intelligence (2023 – 2025)
