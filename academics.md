@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Moyank Giri
-subtitle: IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ************************************************* Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
+subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ********************************************* Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 4 publications incl A-rated conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
 ---
 
 ### EDUCATION
 
 #### 1. M.Tech: IIT Bhilai in Data Science & Artificial Intelligence (2023 – 2025)
-- **CGPA:** 9.45 / 10 (Till 3rd Semester)
+- **CGPA:** 9.6 / 10 (Till 3rd Semester)
 - **Date of Completion:** June 2025
 - **Relevant Courses:** Machine Learning, Adversarial Machine Learning, Advanced Data Structure & Algorithm, Parallelization of Programs, Computer System Design, etc.
 

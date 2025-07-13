@@ -1,17 +1,18 @@
 ---
 layout: projects
 title: Moyank Giri
-subtitle: IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ************************************************* Master’s in Data Science & AI from IIT Bhilai (India) with Ohio State University (USA) | Machine Learning & AI Specialist | Expert in Python, Deep Learning, LLMs, Computer Vision, NLP, Split & Federated Learning
+subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ********************************************* Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 4 publications incl A-rated conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
 ---
 # PROJECTS TO PUBLICATIONS
 
-### 1. A-star Conference: Benchmarking Multimodal AI for Telecom
+### 1. A Conference: Robust and Efficient Federated Learning
+**Publication:** CIKM 2025 – Under review  
+**Summary:** Resulted in 100× lower computation cost and communication traffic with improved test generalization under data heterogeneity
+
+### 2. A-star Conference: Benchmarking Multimodal AI for Telecom
 **Publication:** MobiCom 2025 – Under review  
 **Summary:** Developed a multimodal benchmark addressing telecom-specific challenges. Conducted baseline experiments, improved LLM and VLM performance, and revealed gaps, guiding future research.
 
-### 2. A-star Conference: Robust and Efficient Federated Learning
-**Publication:** KDD 2025 – Under review  
-**Summary:** Resulted in 100× lower computation cost and communication traffic with improved test generalization under data heterogeneity
 
 ### 3. Journal: Automated and Interpretable Fake News Detection with Explainable Artificial Intelligence
 **Publication:** Journal of Applied Security Research 2024  
