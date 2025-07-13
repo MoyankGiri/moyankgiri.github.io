@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Moyank Giri
-subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ********************************************* Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 4 publications incl A-rated conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
+subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ************************************************ Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 4 publications incl A-rated conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
 ---
 # Skills
 ### Technical Skills
