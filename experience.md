@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Moyank Giri
-subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ************************************************ Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 4 publications incl A-rated conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
+subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ************************************************ Adv DS Associate Consultant @ ZS, Alumni of IIT, 3YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 2 publications in journals and conference, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
 ---
 # Skills
 ### Technical Skills
@@ -17,8 +17,8 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 # Experience ( 3 Years )
 
 ### 1. ZS Associates, Bangalore (5+ Months and On going)
-**Role:** Advanced Data Science Associate Consultant
-**Duration:** Full-time, Onsite (June 2025 - Present)
+**Role:** Advanced Data Science Associate Consultant  
+**Duration:** Full-time, Onsite (June 2025 - Present)  
 - **Technical Skills:** Python, Deep Learning, LLMs, Machine Learning
 - **Summary:** Developing a pipeline to classify healthcare professionals by therapeutic area expertise, using RAG-enhanced LLMs, Python, SQL and Databricks to process diverse pharmaceutical data, resulting in currently achieving around 70% classification accuracy  
 
