@@ -16,12 +16,12 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 # PROJECTS
 
 ### 1. Design and Deployment of an Agentic AI System for Resume Analysis using LangGraph 
-**Event:** Proof of Concept
-**Summary:** Designed and implemented an Agentic AI system for automated resume analysis by developing a modular agentic pipeline using LangGraph for workflow orchestration, LangChain for retrieval-augmented generation (RAG), and Google Generative AI for intelligent scoring and recommendations, integrated into a Streamlit web interface. This solution was successfully deployed on Render, providing a scalable, interactive web service that enables users to analyze resumes in real-time, receive structured scoring, and actionable improvement suggestions, while handling resource constraints efficiently.
-**Skills:** Python · Agentic AI · LangGraph · LangChain · Generative AI · Deployment · Retrieval-Augmented Generation (RAG)
+**Event:** Proof of Concept  
+**Summary:** Designed and implemented an Agentic AI system for automated resume analysis by developing a modular agentic pipeline using LangGraph for workflow orchestration, LangChain for retrieval-augmented generation (RAG), and Google Generative AI for intelligent scoring and recommendations, integrated into a Streamlit web interface. This solution was successfully deployed on Render, providing a scalable, interactive web service that enables users to analyze resumes in real-time, receive structured scoring, and actionable improvement suggestions, while handling resource constraints efficiently.  
+**Skills:** Python · Agentic AI · LangGraph · LangChain · Generative AI · Deployment · Retrieval-Augmented Generation (RAG)  
 
-### 2. Robust and Efficient Split Learning 
-**Event:** Researching at Sigma Cubed Lab @ IIT Bhilai
+### 2. Robust and Efficient Split Learning  
+**Event:** Researching at Sigma Cubed Lab @ IIT Bhilai  
 **Summary:** Built an adaptive split learning framework using gradient-norm–based inference, hybrid loss functions, activation caching, and personalization, achieving up to 100× lower computation and communication cost and 29% higher test-time accuracy under heterogeneous, real-world data, making it robust and scalable across real-world domains.
 **Skills:** Python (Programming Language) · Machine Learning · gradient-norm–based inference · hybrid loss functions · Activation caching · Personalization · Deep Learning · Data Science
 
