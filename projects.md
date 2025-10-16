@@ -6,12 +6,12 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 # PROJECTS TO PUBLICATIONS
 
 ### 1. Journal: Automated and Interpretable Fake News Detection with Explainable Artificial Intelligence
-**Publication:** Journal of Applied Security Research 2024  
-**Summary:** This study employs an Ensemble model and CNN model to detect fake news comprising text and/or images and explains the prediction with XAI.  
+**Publication:** Journal of Applied Security Research · May 25, 2024     
+**Summary:** Developed an automated and interpretable fake news detection system by combining machine learning and Explainable AI (XAI) techniques, enabling accurate classification of fake and real news (text and image-based), resulting in over 92% accuracy (First Author)     
 
 ### 2. Conference: Enhancing Safety in Vehicles using Emotion Recognition with Artificial Intelligence
-**Event:** I2CT IEEE Conference 2023  
-**Summary:** This study utilizes deep learning models (CNN Models) for automatic emotion detection from multimodal sources, including audio and video.  
+**Event:** I2CT IEEE Conference May 23, 2023  
+**Summary:** Developed an AI-powered vehicle safety system by integrating deep learning-based emotion recognition from audio and video inputs, achieving detection accuracies of 83% (video) and 78% (audio), and leveraging a music recommendation system to stabilize driver emotions, resulting in enhanced road safety and a reduction in accident risk. (First Author)   
 
 # PROJECTS
 
@@ -32,36 +32,36 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 
 ### 4. Tweet Content and Behavior Simulation 
 **Event:** Inter-IIT Tech Meet 2023  
-**Summary:** Unified multimodal tweets for LLMs resulting in streamlined data handling  
+**Summary:** Unified multimodal inputs into text using captioning and libraries like TensorFlow and HuggingFace, enabling behavior prediction with regression models and content generation using LLMs, resulting in streamlined and efficient multimodal data handling.   
 **Skills:** Large Language Models, Python Libraries (Tensorflow, HuggingFace, etc.)  
 
 ### 5. Automated Tailgating Detection System
 **Event:** Virtual Hackathon  
 **Skills:** MobileNetSSD, Object Tracking, Python Libraries (OpenCV, imutils, etc.)  
-**Summary:** Enabling real-time identification of tailgating incidents for enhanced security  
+**Summary:** Developed an automated tailgating detection system using MobileNetSSD, object tracking, and Python libraries such as OpenCV and imutils, enabling real-time identification of tailgating incidents for enhanced security and safety.  
 
 ### 6. Company 360: A Deep Learning Approach for a Complete Analysis of Companies  
 **Skills:** LSTM, Transformers, Python Libraries (HuggingFace, Transformers, etc.)  
-**Summary:** Leveraged deep learning for comprehensive company analysis, providing insights  
+**Summary:** Built a machine learning pipeline for company analysis by integrating ETL, data mining, and predictive modeling using LSTM, Transformers, and Python libraries such as HuggingFace and Transformers, enabling insights about the company.  
 
 ### 7. Pattern Analysis and Ambiguity Detection for Dataset  
 **Type:** Real-Time Project  
 **Skills:** Python Libraries (Pandas, Matplotlib, etc.)  
-**Summary:**  Conducted pattern analysis and ambiguity detection on a selection process dataset identifying key factors affecting candidate outcomes  
+**Summary:**  Conducted pattern analysis and ambiguity detection on a selection process dataset using ETL, data modeling, and Python libraries such as Pandas and Matplotlib, identifying key factors affecting candidate outcomes and proposing solutions to improve decision-making accuracy and fairness.  
 
 ### 8. Credit Card Customer Churn Prediction  
 **Skills:** Machine Learning Models (Random Forest, AdaBoost, SVM, etc.)  
-**Summary:**  Designed a customer churn prediction system using machine learning models  
+**Summary:**  Designed a customer churn prediction system using machine learning models such as Random Forest, AdaBoost, and SVM, enabling early churn detection.  
 
 ### 9. Lifestyle Management Application  
 **Type:** Android App  
 **Skills:** Java, Android, Firebase, etc.  
-**Summary:** Created a lifestyle management app to help users achieve health and wellness goals effectively.  
+**Summary:** Created a lifestyle management app using Java, Android, and Firebase, integrating activity tracking to help users achieve health and wellness goals effectively.  
 
 ### 10. Campus Food Delivery System
 **Skills:** Docker, AWS, FastAPI, Android, etc.  
 **Summary:** End-to-end campus food delivery system to create an interface between restaurants and students on campus  
 
 ### 11. Neural Music - Generation and Analysis  
-**Skills:** Python, LSTM, Data Analysis, Data Modeling  
-**Summary:** Web app to generate music, enhancing quality and flexibility for musicians.  
+**Skills:** Data Analysis · Analytics · Python (Programming Language) · Machine Learning Algorithms · Long Short-term Memory (LSTM) · Model Training · Data Modeling · Computer Science · TensorFlow   
+**Summary:** Developed Neural Music, a web application using RNN, LSTM, and Python libraries such as Music21 and TensorFlow, to generate lead and backing tracks for music compositions, enabling musicians to create contextual music with enhanced quality and flexibility.  
