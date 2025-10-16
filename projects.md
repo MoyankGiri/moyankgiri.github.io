@@ -1,24 +1,15 @@
 ---
 layout: projects
 title: Moyank Giri
-subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ************************************************ Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 4 publications incl A-rated conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
+subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ************************************************ Adv DS Associate Consultant @ ZS, Alumni of IIT, 2YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 2 publications in journal and conf, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
 ---
 # PROJECTS TO PUBLICATIONS
 
-### 1. A Conference: Robust and Efficient Federated Learning
-**Publication:** CIKM 2025 – Under review  
-**Summary:** Resulted in 100× lower computation cost and communication traffic with improved test generalization under data heterogeneity
-
-### 2. A-star Conference: Benchmarking Multimodal AI for Telecom
-**Publication:** MobiCom 2025 – Under review  
-**Summary:** Developed a multimodal benchmark addressing telecom-specific challenges. Conducted baseline experiments, improved LLM and VLM performance, and revealed gaps, guiding future research.
-
-
-### 3. Journal: Automated and Interpretable Fake News Detection with Explainable Artificial Intelligence
+### 1. Journal: Automated and Interpretable Fake News Detection with Explainable Artificial Intelligence
 **Publication:** Journal of Applied Security Research 2024  
 **Summary:** This study employs an Ensemble model and CNN model to detect fake news comprising text and/or images and explains the prediction with XAI.  
 
-### 4. Conference: Enhancing Safety in Vehicles using Emotion Recognition with Artificial Intelligence
+### 2. Conference: Enhancing Safety in Vehicles using Emotion Recognition with Artificial Intelligence
 **Event:** I2CT IEEE Conference 2023  
 **Summary:** This study utilizes deep learning models (CNN Models) for automatic emotion detection from multimodal sources, including audio and video.  
 
@@ -30,7 +21,7 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 2 YOE ****************************
 **Summary:** Unified multimodal tweets for LLMs resulting in streamlined data handling
 
 ### 2. Automated Tailgating Detection System
-**Event:** VMWare: Virtual Hackathon  
+**Event:** Virtual Hackathon  
 **Skills:** MobileNetSSD, Object Tracking, Python Libraries (OpenCV, imutils, etc.)
 **Summary:** Enabling real-time identification of tailgating incidents for enhanced security
 
