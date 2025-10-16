@@ -28,24 +28,27 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 - **Technical Skills:** Python, LLM, LoRA, NLP, Huggingface, Transformers, Pytorch and Numpy  
 - **Summary:** Utilized Python, LLM, LoRA, NLP, and Supercomputing environment, along with libraries like Huggingface, Transformers, Pytorch, and Numpy, to work on the efficient finetuning of LLMs in collaboration with industry experts using layer selection strategies and skip connections, resulting in a 10% reduction in finetuning time and significant savings in computational resources.  
 
-### 3. Teaching Assistant at Big Data Technologies Lab, IIT Bhilai
-**Duration:** 1 year, Part-time, Onsite, Paid (Aug 2023 - June 2024)
-- **Technical Skills:** Hadoop, Hive, Spark, Storm, Kafka, Docker, AWS, Python, Java, etc.
-- **Summary:** Configured and Validated Big Data Environments on AWS and Conducted Tutorials, Hands-on Lab Sessions on Big Data Technologies.
+### 3. IIT Bhilai (1 Year and 2 Months )
+**Role:** Researcher
+**Duration:** Onsite  (Feb 2025 - June 2025)
+- **Technical Skills:** Federated Learning.
+- **Summary:** Implemented a Federated Split Learning framework with caching and personalization, reducing communication and computation costs by 100× under heterogeneous data conditions.  
 
-### 4. Trainee at Hewlett Packard Enterprise (HPE, R&D, India)
-**Duration:** 6 Months, Full-time, Onsite, Paid (Jan 2023 - July 2023)
+**Role:** Teaching Assistant  
+**Duration:** Onsite  (August 2023 - June 2024)  
+- **Technical Skills:** Hadoop, Hive, Spark, Storm, Kafka, Docker, AWS, Python, Java, etc.  
+- **Summary:** Developed Big Data Technologies by configuring Hadoop, Hive, Spark, and Kafka environments using Python, Docker, AWS, and Kubernetes, achieving 100% functional setups.  
+
+### 4. Hewlett Packard Enterprise (HPE, R&D, India)
+**Role:** Trainee  
+**Duration:** Full-time, Onsite (Jan 2023 - July 2023)  
 - Converted to Full-Time Employment
 - **Technical Skills:** Python Libraries (threading, ThreadPoolExecutor, etc.)
 - **Summary:** Developed an End-to-End workflow using Python in HPE Storage framework to optimize execution time, resulting in more than 70% improvement.
 
 
-### 6. Intern at Hewlett Packard Enterprise (HPE, R&D, India) through HPCTY Program
-**Duration:** 6 Months, Part-time, Hybrid mode (Feb 2022 – July 2022)
-- **Technical Skills:** Docker, Kubernetes, AWS, Prometheus, Grafana, gRPC, Python.
-- **Summary:** Built an Always Observable Cloud Application on AWS to monitor and analyze application-level and service/POD level metrics, and generate alerts.
+**Role:** intern 
+**Duration:** 6 Months, Part-time, Hybrid mode (Feb 2022 – July 2022)  
+- **Technical Skills:** Docker, Kubernetes, AWS, Prometheus, Grafana, gRPC, Python.  
+- **Summary:** Built an Always Observable Cloud Application on AWS to monitor and analyze application-level and service/POD level metrics, and generate alerts.  
 
-### 7. "Neural Music - Generation and Analysis" Internship at PES Innovation Lab
-**Duration:** 2 Months, Full-time, Remote, Paid (May 2020 - July 2020)
-- **Technical Skills:** RNN, LSTM, Python Libraries (Music21, TensorFlow, etc.)
-- **Summary:** Created a model for generating backing tracks from lead input or lead tracks for chosen chord progressions.
