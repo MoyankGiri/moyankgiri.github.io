@@ -23,6 +23,8 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 - **Summary:** Developing a pipeline to classify healthcare professionals by therapeutic area expertise, using RAG-enhanced LLMs, Python, SQL and Databricks to process diverse pharmaceutical data, resulting in currently achieving around 70% classification accuracy  
 
 ### 2. Ohio State University, USA (8 Months)
+**Role:** Advanced Data Science Associate Consultant  
+**Duration:** Full-time, Onsite (June 2025 - Present)  
 **Role:** Research Scholar 
 **Duration:** Full-time, Onsite, (June 2024 - Feb 2025)  
 - **Technical Skills:** Python, LLM, LoRA, NLP, Huggingface, Transformers, Pytorch and Numpy  
