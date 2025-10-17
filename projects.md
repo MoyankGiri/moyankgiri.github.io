@@ -10,7 +10,7 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 **Summary:** Developed an automated and interpretable fake news detection system by combining machine learning and Explainable AI (XAI) techniques, enabling accurate classification of fake and real news (text and image-based), resulting in over 92% accuracy (First Author)     
 
 ### 2. Conference: Enhancing Safety in Vehicles using Emotion Recognition with Artificial Intelligence
-**Event:** I2CT IEEE Conference May 23, 2023  
+**Publication:** I2CT IEEE Conference May 23, 2023  
 **Summary:** Developed an AI-powered vehicle safety system by integrating deep learning-based emotion recognition from audio and video inputs, achieving detection accuracies of 83% (video) and 78% (audio), and leveraging a music recommendation system to stabilize driver emotions, resulting in enhanced road safety and a reduction in accident risk. (First Author)   
 
 # PROJECTS
@@ -37,31 +37,35 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 
 ### 5. Automated Tailgating Detection System
 **Event:** Virtual Hackathon  
-**Skills:** MobileNetSSD, Object Tracking, Python Libraries (OpenCV, imutils, etc.)  
 **Summary:** Developed an automated tailgating detection system using MobileNetSSD, object tracking, and Python libraries such as OpenCV and imutils, enabling real-time identification of tailgating incidents for enhanced security and safety.  
+**Skills:** MobileNetSSD, Object Tracking, Python Libraries (OpenCV, imutils, etc.)  
 
 ### 6. Company 360: A Deep Learning Approach for a Complete Analysis of Companies  
-**Skills:** LSTM, Transformers, Python Libraries (HuggingFace, Transformers, etc.)  
+**Event:** Academic Project  
 **Summary:** Built a machine learning pipeline for company analysis by integrating ETL, data mining, and predictive modeling using LSTM, Transformers, and Python libraries such as HuggingFace and Transformers, enabling insights about the company.  
+**Skills:** LSTM, Transformers, Python Libraries (HuggingFace, Transformers, etc.)  
 
 ### 7. Pattern Analysis and Ambiguity Detection for Dataset  
-**Type:** Real-Time Project  
+**Event:** Academic Project (Real-Time )  
 **Skills:** Python Libraries (Pandas, Matplotlib, etc.)  
 **Summary:**  Conducted pattern analysis and ambiguity detection on a selection process dataset using ETL, data modeling, and Python libraries such as Pandas and Matplotlib, identifying key factors affecting candidate outcomes and proposing solutions to improve decision-making accuracy and fairness.  
 
 ### 8. Credit Card Customer Churn Prediction  
-**Skills:** Machine Learning Models (Random Forest, AdaBoost, SVM, etc.)  
+**Event:** Academic Project 
 **Summary:**  Designed a customer churn prediction system using machine learning models such as Random Forest, AdaBoost, and SVM, enabling early churn detection.  
+**Skills:** Machine Learning Models (Random Forest, AdaBoost, SVM, etc.)  
 
-### 9. Lifestyle Management Application  
-**Type:** Android App  
-**Skills:** Java, Android, Firebase, etc.  
+### 9. Lifestyle Management Application  - Android App  
+**Event:** Academic Project   
 **Summary:** Created a lifestyle management app using Java, Android, and Firebase, integrating activity tracking to help users achieve health and wellness goals effectively.  
+**Skills:** Java, Android, Firebase, etc.  
 
-### 10. Campus Food Delivery System
-**Skills:** Docker, AWS, FastAPI, Android, etc.  
+### 10. Campus Food Delivery System  
+**Event:** Academic Project  
 **Summary:** End-to-end campus food delivery system to create an interface between restaurants and students on campus  
+**Skills:** Docker, AWS, FastAPI, Android, etc. 
 
-### 11. Neural Music - Generation and Analysis  
-**Skills:** Data Analysis · Analytics · Python (Programming Language) · Machine Learning Algorithms · Long Short-term Memory (LSTM) · Model Training · Data Modeling · Computer Science · TensorFlow   
+### 11. Neural Music - Generation and Analysis   
+**Event:** Internship Project  
 **Summary:** Developed Neural Music, a web application using RNN, LSTM, and Python libraries such as Music21 and TensorFlow, to generate lead and backing tracks for music compositions, enabling musicians to create contextual music with enhanced quality and flexibility.  
+**Skills:** Data Analysis · Analytics · Python (Programming Language) · Machine Learning Algorithms · Long Short-term Memory (LSTM) · Model Training · Data Modeling · Computer Science · TensorFlow   
