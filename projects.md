@@ -51,8 +51,8 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 **Summary:**  Conducted pattern analysis and ambiguity detection on a selection process dataset using ETL, data modeling, and Python libraries such as Pandas and Matplotlib, identifying key factors affecting candidate outcomes and proposing solutions to improve decision-making accuracy and fairness.  
 
 ### 8. Credit Card Customer Churn Prediction  
-**Event:** Academic Project 
-**Summary:**  Designed a customer churn prediction system using machine learning models such as Random Forest, AdaBoost, and SVM, enabling early churn detection.  
+**Event:** Academic Project   
+**Summary:**  Designed a customer churn prediction system using machine learning models such as Random Forest, AdaBoost, and SVM, enabling early churn detection.   
 **Skills:** Machine Learning Models (Random Forest, AdaBoost, SVM, etc.)  
 
 ### 9. Lifestyle Management Application  - Android App  
