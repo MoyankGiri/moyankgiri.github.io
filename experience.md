@@ -18,33 +18,33 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 
 ### 1. ZS Associates, Bangalore (5+ Months and On going)
 **Role:** Advanced Data Science Associate Consultant  
-**Duration:** Full-time, Onsite (June 2025 - Present)  
+**Duration:** 5+ Months, Full-time, Onsite (June 2025 - Present)  
 - **Technical Skills:** Python, Deep Learning, LLMs, Machine Learning
 - **Summary:** Developing a pipeline to classify healthcare professionals by therapeutic area expertise, using RAG-enhanced LLMs, Python, SQL and Databricks to process diverse pharmaceutical data, resulting in currently achieving around 70% classification accuracy  
 
 ### 2. Ohio State University, USA (8 Months)
 **Role:** Research Scholar  
-**Duration:** Full-time, Onsite, (June 2024 - Feb 2025)  
+**Duration:** 8 Months, Full-time, Onsite, (June 2024 - Feb 2025)  
 - **Technical Skills:** Python, LLM, LoRA, NLP, Huggingface, Transformers, Pytorch and Numpy  
 - **Summary:** Utilized Python, LLM, LoRA, NLP, and Supercomputing environment, along with libraries like Huggingface, Transformers, Pytorch, and Numpy, to work on the efficient finetuning of LLMs in collaboration with industry experts using layer selection strategies and skip connections, resulting in a 10% reduction in finetuning time and significant savings in computational resources.  
-
+-I was offered for a Ph.D. position at The Ohio State University by OSU Professor after completing 8 months of a two-year Research Scholar role at OSU before returning to IIT Bhilai to meet my M.Tech requirements.
 ### 3. Indian Institute Of Technology, IIT Bhilai (1 Year and 2 Months )
 **Role:** Researcher  
-**Duration:** Onsite  (Feb 2025 - June 2025)  
+**Duration:** 3 Months, Full time, Onsite  (Feb 2025 - June 2025)  
 - **Technical Skills:** Federated Learning.
-- **Summary:** Implemented a Federated Split Learning framework with caching and personalization, reducing communication and computation costs by 100× under heterogeneous data conditions.  
+- **Summary:** Implemented a Federated Split Learning framework with caching and personalization, reducing communication and computation costs by 100× under heterogeneous data conditions.
+- I was offered for an Integrated Ph.D. at IIT Bhilai from thesis Supervisor.
 
 **Role:** Teaching Assistant  
-**Duration:** Onsite  (August 2023 - June 2024)  
+**Duration:** 11 Months, Onsite  (August 2023 - June 2024)  
 - **Technical Skills:** Hadoop, Hive, Spark, Storm, Kafka, Docker, AWS, Python, Java, etc.  
 - **Summary:** Developed Big Data Technologies by configuring Hadoop, Hive, Spark, and Kafka environments using Python, Docker, AWS, and Kubernetes, achieving 100% functional setups.  
 
 ### 4. Hewlett Packard Enterprise (HPE, R&D, India)  (1 Year and 1 Month)
-**Role:** Trainee  
-**Duration:** Full-time, Onsite (Jan 2023 - July 2023)  
-- Converted to Full-Time Employment
+**Role:** Trainee - Storage R&D 
+**Duration:** 7 Months, Full-time, Onsite (Jan 2023 - July 2023)  
 - **Technical Skills:** Python Libraries (threading, ThreadPoolExecutor, etc.)
-- **Summary:** Developed an End-to-End workflow using Python in HPE Storage framework to optimize execution time, resulting in more than 70% improvement.
+- **Summary:** Developed an End-to-End workflow using Python in HPE Storage framework to optimize execution time, resulting in more than 70% improvement (Converted to Full-Time Employment).
 
 
 **Role:** intern  
