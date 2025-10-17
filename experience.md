@@ -26,14 +26,14 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 **Role:** Research Scholar  
 **Duration:** 8 Months, Full-time, Onsite, (June 2024 - Feb 2025)  
 - **Technical Skills:** Python, LLM, LoRA, NLP, Huggingface, Transformers, Pytorch and Numpy  
-- **Summary:** Utilized Python, LLM, LoRA, NLP, and Supercomputing environment, along with libraries like Huggingface, Transformers, Pytorch, and Numpy, to work on the efficient finetuning of LLMs in collaboration with industry experts using layer selection strategies and skip connections, resulting in a 10% reduction in finetuning time and significant savings in computational resources.  
--I was offered for a Ph.D. position at The Ohio State University by OSU Professor after completing 8 months of a two-year Research Scholar role at OSU before returning to IIT Bhilai to meet my M.Tech requirements.
+- **Summary:** Utilized Python, LLM, LoRA, NLP, and Supercomputing environment, along with libraries like Huggingface, Transformers, Pytorch, and Numpy, to work on the efficient finetuning of LLMs in collaboration with industry experts using layer selection strategies and skip connections, resulting in a 10% reduction in finetuning time and significant savings in computational resources.
+- Was offered for a Ph.D. position at The Ohio State University by OSU Professor after completing 8 months of a two-year Research Scholar role at OSU before returning to IIT Bhilai to meet my M.Tech requirements.
 ### 3. Indian Institute Of Technology, IIT Bhilai (1 Year and 2 Months )
 **Role:** Researcher  
 **Duration:** 3 Months, Full time, Onsite  (Feb 2025 - June 2025)  
 - **Technical Skills:** Federated Learning.
 - **Summary:** Implemented a Federated Split Learning framework with caching and personalization, reducing communication and computation costs by 100× under heterogeneous data conditions.
-- I was offered for an Integrated Ph.D. at IIT Bhilai from thesis Supervisor.
+- Was offered for an Integrated Ph.D. at IIT Bhilai from thesis Supervisor.
 
 **Role:** Teaching Assistant  
 **Duration:** 11 Months, Onsite  (August 2023 - June 2024)  
