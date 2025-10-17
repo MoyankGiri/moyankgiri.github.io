@@ -47,8 +47,8 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 
 ### 7. Pattern Analysis and Ambiguity Detection for Dataset  
 **Event:** Academic Project (Real-Time )  
-**Skills:** Python Libraries (Pandas, Matplotlib, etc.)  
 **Summary:**  Conducted pattern analysis and ambiguity detection on a selection process dataset using ETL, data modeling, and Python libraries such as Pandas and Matplotlib, identifying key factors affecting candidate outcomes and proposing solutions to improve decision-making accuracy and fairness.  
+**Skills:** Python Libraries (Pandas, Matplotlib, etc.)  
 
 ### 8. Credit Card Customer Churn Prediction  
 **Event:** Academic Project   
