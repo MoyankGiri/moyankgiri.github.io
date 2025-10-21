@@ -3,6 +3,21 @@ layout: projects
 title: Moyank Giri
 subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ************************************************ Adv DS Associate Consultant @ ZS, Alumni of IIT, 3YOE, Ex Scho @ OSU-US, Ex-HPE, MTech-DSAI, BTech-CSE & 2 publications in journals and conference, Skilled in ML, NLP, DS, GenAI & EdgeAI etc
 ---
+  <p style="text-align: center; margin-top: 20px;">
+    <a href="https://drive.google.com/file/d/1QBbX0Nok78xT5ry_4--1UwdyKhS3O1fG/view?usp=drive_link" target="_blank" style="
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;">
+      📄 View My Skill Vs Exp Matrix
+    </a>
+  </p>
+
 # Skills
 ### Technical Skills
 
