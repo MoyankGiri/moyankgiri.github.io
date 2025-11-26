@@ -14,7 +14,7 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       transition: background-color 0.3s ease;">
-      📄 View My Skill Vs Exp Matrix
+      📄 View My Resume and Skill Vs Exp Matrix
     </a>
   </p>
 
