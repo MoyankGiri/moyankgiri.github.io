@@ -21,17 +21,17 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 # Skills
 ### Technical Skills
 
-* **Languages and Tools**: Python, R, SQL, C, Java, Docker, Kubernetes, AWS, gRPC, Prometheus, Grafana, Google Gemini API, OpenAI API, Azure Cloud, DataBricks, PowerBI, GitHub Actions, Hadoop, Spark, Kafka, Storm, Android, MongoDB, Qdrant VectorDB, Hive, Firebase, Render, Linux  
+* **Languages and Tools**: Python, SQL, AWS, Azure Cloud, DataBricks, Docker, Kubernetes, gRPC, Prometheus, Grafana, OpenAI API,Google Gemini API, PowerBI, GitHub Actions, Hadoop, Spark, Kafka, Storm, MongoDB, Qdrant VectorDB,Hive, Render, Android, Firebase, Java, R, C, Linux  
 
-* **DL/ML Techniques**: LLM, NLP, Generative AI, Data Science, Advanced RAG, Computer Vision, Split Learning, Federated Learning, Explainable AI, CNN, Machine Learning, Deep Learning, LSTM/RNN, Distributed Deep Learning, ETL, Data Modeling and Mining, Supervised and Unsupervised learning techniques, Feature Engineering  
+* **DL/ML Techniques**: LLM, NLP, Agentic AI, Generative AI, Data Science, Advanced RAG, Machine Learning, Deep Learning, Computer Vision, Split Learning, Federated Learning, Explainable AI, CNN, LSTM/RNN, ETL, Data Modeling and Mining, Supervised and Unsupervised learning techniques, Feature Engineering 
 
-* **Python Libraries**: HuggingFace, PyTorch, Transformers, LangGraph, LangChain, Tensorflow, SKLearn, MatPlotLib, NumPy, LIME, OpenCV, FastAPI, Requests, BeautifulSoup  
+* **Python Libraries**: HuggingFace, PyTorch, Transformers, LangGraph, LangChain, Tensorflow, SKLearn, OpenCV, Pandas, MatPlotLib, NumPy, LIME, FastAPI, Requests, BeautifulSoup  
 
 * **Courses**: Machine Learning, Adversarial Machine Learning, Advanced Data Structure & Algorithm, Parallelization of Programs, Computer System Design, Machine Intelligence, Database Management System, Computer vision and Image processing, Data analytics, Statistics for Data Science,Data structures and its applications, Cloud Computing, Automated Information Retreival etc
 
 # Experience ( 3 Years )
 
-### 1. ZS Associates, Bangalore (5+ Months and On going)
+### 1. ZS Associates, Bangalore (6+ Months and On going)
 **Role:** Advanced Data Science Associate Consultant  
 **Duration:** 5+ Months, Full-time, Onsite (June 2025 - Present)  
 - **Technical Skills:** Python, Deep Learning, LLMs, Machine Learning
