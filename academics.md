@@ -7,11 +7,16 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 ### EDUCATION
 
 #### 1. M.Tech: IIT Bhilai in Data Science & Artificial Intelligence (2023 – 2025)
-- **CGPA:** 9.6 / 10
+- **CGPA:** 9.6 / 10 (2nd highest CGPA in the DSAI 2023–25 batch)
+- 4 Full time employment Offers upon completion of M Tech
+- Was offered for a Ph.D. position at Ohio State University by OSU Professor after completing 8 months of a two-year Research Scholar role at OSU.
+- Was also offered for an Integrated Ph.D. at IIT Bhilai from thesis Supervisor.
+- Masters (M.Tech) at IIT Bhillai through GATE 2023 (Ranked in top 2% )  
 - **Relevant Courses:** Machine Learning, Adversarial Machine Learning, Advanced Data Structure & Algorithm, Parallelization of Programs, Computer System Design, etc.
 
 #### 2. B.Tech: PES University in Computer Science & Engineering (2019 - 2023)
 - **CGPA:** 9.0 / 10 with Specialization in "Machine Intelligence and Data Science"
+- 2 Full time Employment Offers upon completion of B Tech ( HPE & Muxable Lab)
 - **Relevant Courses:** Machine Intelligence, Database Management System, Computer Vision and Image Processing, Data Analytics, Statistics for Data Science, Data Structures and its Applications, Cloud Computing, Automated Information Retrieval, etc.
 
 #### 3. Pre University College-PUC (+2), Karnataka Board (2017 - 2019)
