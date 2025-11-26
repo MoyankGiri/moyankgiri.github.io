@@ -57,7 +57,7 @@ subtitle: ZS | IITian | Ex-OSU,USA | Ex-HPE | 3 YOE ****************************
 - **Summary:** Developed Big Data Technologies by configuring Hadoop, Hive, Spark, and Kafka environments using Python, Docker, AWS, and Kubernetes, achieving 100% functional setups.  
 
 ### 4. Hewlett Packard Enterprise (HPE, R&D, India)  (1 Year and 1 Month)
-**Role:** Trainee - Storage R&D 
+**Role:** Trainee - Storage R&D  
 **Duration:** 7 Months, Full-time, Onsite (Jan 2023 - July 2023)  
 - **Technical Skills:** Python Libraries (threading, ThreadPoolExecutor, etc.)
 - **Summary:** Developed an End-to-End workflow using Python in HPE Storage framework to optimize execution time, resulting in more than 70% improvement (Converted to Full-Time Employment).
