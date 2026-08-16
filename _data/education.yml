@@ -2,6 +2,7 @@
   degree: "M.Tech, Data Science & Artificial Intelligence"
   duration: "July 2023 - June 2025"
   grade: "CGPA 9.6 / 10 (2nd highest in the DSAI 2023-25 batch)"
+  logo: "/assets/img/iitbhilai.png"
   highlights:
     - "M.Tech research thesis in Large Language Models, sponsored by Ohio State University, USA (July 2024 - February 2025)"
     - "Received 4 full-time employment offers on completion of the M.Tech"
@@ -19,6 +20,7 @@
   degree: "B.Tech, Computer Science & Engineering"
   duration: "August 2019 - June 2023"
   grade: "CGPA 9.0 / 10"
+  logo: "/assets/img/peslogo.png"
   highlights:
     - "Specialization in Machine Intelligence and Data Science"
     - "Received 2 full-time employment offers on completion of the B.Tech"
@@ -36,6 +38,7 @@
   degree: "PCMC (12th)"
   duration: "2017 - 2019"
   grade: "90.6% | JEE Mains percentile 96.51"
+  logo: ""
   highlights: []
   courses: []
 
@@ -43,6 +46,7 @@
   degree: "10th, CBSE"
   duration: "2015 - 2017"
   grade: "10 / 10 CGPA"
+  logo: ""
   highlights: []
   courses: []
 
@@ -50,5 +54,6 @@
   degree: "Schooling"
   duration: "2007 - 2015"
   grade: ""
+  logo: ""
   highlights: []
   courses: []

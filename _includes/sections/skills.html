@@ -1,15 +1,21 @@
 <section id="skills">
   <div class="container">
     <div class="section-header">
-      <h2>Skills</h2>
+      <div class="eyebrow">Skills</div>
+      <h2>What I work with</h2>
     </div>
 
     {% for group in site.data.skills %}
     <div class="skill-group">
       <div class="skill-group-title">{{ group.category }}</div>
-      <div class="tag-row">
+      <div class="chip-row">
         {% for item in group.items %}
-        <span class="tag">{{ item }}</span>
+        <span class="skill-chip">
+          {% if item.icon != "" %}
+          <img src="https://cdn.simpleicons.org/{{ item.icon }}/aab1f2" alt="" loading="lazy" onerror="this.remove()">
+          {% endif %}
+          {{ item.name }}
+        </span>
         {% endfor %}
       </div>
     </div>

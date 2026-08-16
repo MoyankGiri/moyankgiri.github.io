@@ -1,7 +1,15 @@
 {%- assign site_data = site.data.site -%}
+{%- assign initials = "" -%}
+{%- for word in site_data.name | split: " " -%}
+  {%- assign first_char = word | slice: 0, 1 -%}
+  {%- assign initials = initials | append: first_char -%}
+{%- endfor -%}
 <header class="site-nav">
   <div class="container">
-    <a href="#top" class="nav-logo">{{ site_data.name }}</a>
+    <a href="#top" class="nav-logo">
+      <span class="monogram">{{ initials }}</span>
+      {{ site_data.name }}
+    </a>
 
     <nav aria-label="Primary">
       <ul class="nav-links">

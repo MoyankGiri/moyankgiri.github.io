@@ -1,69 +1,69 @@
 - category: "Languages & Tools"
   items:
-    - "Python"
-    - "SQL"
-    - "AWS"
-    - "Azure Cloud"
-    - "Databricks"
-    - "Docker"
-    - "Kubernetes"
-    - "gRPC"
-    - "Prometheus"
-    - "Grafana"
-    - "OpenAI API"
-    - "Google Gemini API"
-    - "PowerBI"
-    - "GitHub Actions"
-    - "Hadoop"
-    - "Spark"
-    - "Kafka"
-    - "Storm"
-    - "MongoDB"
-    - "Qdrant VectorDB"
-    - "Hive"
-    - "Render"
-    - "Android"
-    - "Firebase"
-    - "Java"
-    - "R"
-    - "C"
-    - "Linux"
+    - { name: "Python", icon: "python" }
+    - { name: "SQL", icon: "" }
+    - { name: "AWS", icon: "amazonaws" }
+    - { name: "Azure Cloud", icon: "microsoftazure" }
+    - { name: "Databricks", icon: "databricks" }
+    - { name: "Docker", icon: "docker" }
+    - { name: "Kubernetes", icon: "kubernetes" }
+    - { name: "gRPC", icon: "grpc" }
+    - { name: "Prometheus", icon: "prometheus" }
+    - { name: "Grafana", icon: "grafana" }
+    - { name: "OpenAI API", icon: "openai" }
+    - { name: "Google Gemini API", icon: "googlegemini" }
+    - { name: "PowerBI", icon: "powerbi" }
+    - { name: "GitHub Actions", icon: "githubactions" }
+    - { name: "Hadoop", icon: "apachehadoop" }
+    - { name: "Spark", icon: "apachespark" }
+    - { name: "Kafka", icon: "apachekafka" }
+    - { name: "Storm", icon: "apachestorm" }
+    - { name: "MongoDB", icon: "mongodb" }
+    - { name: "Qdrant VectorDB", icon: "qdrant" }
+    - { name: "Hive", icon: "" }
+    - { name: "Render", icon: "render" }
+    - { name: "Android", icon: "android" }
+    - { name: "Firebase", icon: "firebase" }
+    - { name: "Java", icon: "openjdk" }
+    - { name: "R", icon: "r" }
+    - { name: "C", icon: "" }
+    - { name: "Linux", icon: "linux" }
 
 - category: "DL / ML Techniques"
   items:
-    - "LLM"
-    - "NLP"
-    - "Agentic AI"
-    - "Generative AI"
-    - "Data Science"
-    - "Advanced RAG"
-    - "Machine Learning"
-    - "Deep Learning"
-    - "Computer Vision"
-    - "Split Learning"
-    - "Federated Learning"
-    - "Explainable AI"
-    - "CNN"
-    - "LSTM / RNN"
-    - "ETL"
-    - "Data Modeling & Mining"
-    - "Supervised & Unsupervised Learning"
-    - "Feature Engineering"
+    - { name: "LLM", icon: "" }
+    - { name: "NLP", icon: "" }
+    - { name: "Agentic AI", icon: "" }
+    - { name: "Generative AI", icon: "" }
+    - { name: "Data Science", icon: "" }
+    - { name: "Advanced RAG", icon: "" }
+    - { name: "Machine Learning", icon: "" }
+    - { name: "Deep Learning", icon: "" }
+    - { name: "Computer Vision", icon: "" }
+    - { name: "Split Learning", icon: "" }
+    - { name: "Federated Learning", icon: "" }
+    - { name: "Explainable AI", icon: "" }
+    - { name: "CNN", icon: "" }
+    - { name: "LSTM / RNN", icon: "" }
+    - { name: "ETL", icon: "" }
+    - { name: "Data Modeling & Mining", icon: "" }
+    - { name: "Supervised & Unsupervised Learning", icon: "" }
+    - { name: "Feature Engineering", icon: "" }
 
 - category: "Python Libraries"
   items:
-    - "HuggingFace"
-    - "PyTorch"
-    - "Transformers"
-    - "LangGraph"
-    - "LangChain"
-    - "TensorFlow"
-    - "Scikit-learn"
-    - "OpenCV"
-    - "Pandas"
-    - "Matplotlib"
-    - "NumPy"
-    - "LIME"
-    - "FastAPI"
-    - "Requests"
-    - "BeautifulSoup"
+    - { name: "HuggingFace", icon: "huggingface" }
+    - { name: "PyTorch", icon: "pytorch" }
+    - { name: "Transformers", icon: "" }
+    - { name: "LangGraph", icon: "" }
+    - { name: "LangChain", icon: "langchain" }
+    - { name: "TensorFlow", icon: "tensorflow" }
+    - { name: "Scikit-learn", icon: "scikitlearn" }
+    - { name: "OpenCV", icon: "opencv" }
+    - { name: "Pandas", icon: "pandas" }
+    - { name: "Matplotlib", icon: "" }
+    - { name: "NumPy", icon: "numpy" }
+    - { name: "LIME", icon: "" }
+    - { name: "FastAPI", icon: "fastapi" }
+    - { name: "Requests", icon: "" }
+    - { name: "BeautifulSoup", icon: "" }

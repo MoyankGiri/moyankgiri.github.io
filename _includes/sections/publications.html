@@ -1,21 +1,19 @@
 <section id="publications">
   <div class="container">
     <div class="section-header">
-      <h2>Publications</h2>
+      <div class="eyebrow">Publications</div>
+      <h2>Papers & preprints</h2>
     </div>
 
-    <div class="pub-list">
+    <div class="card-grid">
       {% for pub in site.data.publications %}
-      <article class="pub-item">
-        <div class="venue-row">
-          <span>{{ pub.venue }}</span>
-          <span>{{ pub.date }}</span>
-        </div>
+      <article class="dark-card record-card">
+        <div class="org-line">{{ pub.venue }} &middot; {{ pub.date }}</div>
         <h3>{{ pub.title }}</h3>
         <p>{{ pub.summary }}</p>
         {% if pub.github != "" %}
-        <div class="project-links">
-          <a href="{{ pub.github }}" target="_blank" rel="noopener">{% include icon.html name="github" %} Source</a>
+        <div class="record-links">
+          <a class="link-outline" href="{{ pub.github }}" target="_blank" rel="noopener">Source {% include icon.html name="external" %}</a>
         </div>
         {% endif %}
       </article>

@@ -9,14 +9,14 @@ Personal portfolio site for Moyank Giri, built with [Jekyll](https://jekyllrb.co
 | File | Controls |
 |---|---|
 | `_data/site.yml` | Name, tagline, contact info, social links, résumé PDF path, hero subtitle, About paragraph, nav links |
-| `_data/skills.yml` | Skill tag groups (category + list of items) |
-| `_data/experience.yml` | Work experience timeline (company, role, duration, location, bullets) |
-| `_data/education.yml` | Degrees/schools (institution, degree, duration, grade, highlights, courses) |
-| `_data/achievements.yml` | Scholarships, extracurriculars — a flat list of strings |
+| `_data/skills.yml` | Skill groups — category + list of `{name, icon}`. `icon` is an optional [Simple Icons](https://simpleicons.org) slug (e.g. `python`, `docker`); leave it `""` for anything without a real logo (most ML/DS concepts) and it renders as a text-only chip |
+| `_data/experience.yml` | Work experience (company, role, duration, location, mode, `logo` path under `assets/img/`, bullets) — leave `logo: ""` to fall back to an initials monogram |
+| `_data/education.yml` | Degrees/schools (institution, degree, duration, grade, `logo`, highlights, courses) |
+| `_data/achievements.yml` | Scholarships, extracurriculars — a flat list of strings, its own "Accomplishments" section |
 | `_data/publications.yml` | Publications (title, venue, date, summary, GitHub link) |
 | `_data/projects.yml` | Projects (title, dates, org, summary, skills, GitHub link, `featured: true/false`) |
 
-`featured: true` projects render as full cards in the main grid; everything else renders in the compact "More projects" list below it.
+Every education/experience/project/achievement record renders as a card. Sections with more records than the default visible count show a "See more" toggle for the rest — for projects, `featured: true` entries are the ones shown by default.
 
 To update your résumé PDF, drop the new file in `assets/pdfs/` and update `resume_pdf` in `_data/site.yml`.
 

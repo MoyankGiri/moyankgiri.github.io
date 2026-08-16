@@ -1,50 +1,43 @@
-{%- assign featured = site.data.projects | where: "featured", true -%}
-{%- assign more = site.data.projects | where: "featured", false -%}
+{%- assign featured_projects = site.data.projects | where: "featured", true -%}
+{%- assign other_projects = site.data.projects | where: "featured", false -%}
+{%- assign ordered = featured_projects | concat: other_projects -%}
+{%- assign default_count = featured_projects.size -%}
+{%- assign remaining = other_projects.size -%}
 <section id="projects">
   <div class="container">
     <div class="section-header">
-      <h2>Projects</h2>
-      <p class="section-lead">A selection of applied AI, ML, and systems projects. See more on GitHub.</p>
+      <div class="eyebrow">Projects</div>
+      <h2>Selected work</h2>
+      <p class="section-lead">Applied AI, ML, and systems projects. See more on GitHub.</p>
     </div>
 
-    <div class="project-grid">
-      {% for p in featured %}
-      <article class="project-card">
-        <div class="org">{{ p.org }}{% if p.date_range != "" %} &middot; {{ p.date_range }}{% endif %}</div>
+    <div class="card-grid card-grid--3" data-see-more>
+      {% for p in ordered %}
+      <article class="dark-card record-card{% unless p.featured %} is-extra{% endunless %}"{% unless p.featured %} hidden{% endunless %}>
+        <div class="org-line">{{ p.org }}{% if p.date_range != "" %} &middot; {{ p.date_range }}{% endif %}</div>
         <h3>{{ p.title }}</h3>
         <p>{{ p.summary }}</p>
         {% if p.skills.size > 0 %}
-        <div class="tag-row">
+        <div class="chip-row">
           {% for skill in p.skills %}
-          <span class="tag">{{ skill }}</span>
+          <span class="skill-chip">{{ skill }}</span>
           {% endfor %}
         </div>
         {% endif %}
         {% if p.github != "" %}
-        <div class="project-links">
-          <a href="{{ p.github }}" target="_blank" rel="noopener">{% include icon.html name="github" %} Source</a>
+        <div class="record-links">
+          <a class="link-outline" href="{{ p.github }}" target="_blank" rel="noopener">Source {% include icon.html name="external" %}</a>
         </div>
         {% endif %}
       </article>
       {% endfor %}
     </div>
 
-    {% if more.size > 0 %}
-    <div class="project-more">
-      <div class="project-more-title">More projects</div>
-      <div class="project-more-grid">
-        {% for p in more %}
-        <div class="project-more-item">
-          {% if p.github != "" %}
-          <a class="title" href="{{ p.github }}" target="_blank" rel="noopener">{{ p.title }}</a>
-          {% else %}
-          <span class="title">{{ p.title }}</span>
-          {% endif %}
-          <span class="date">{{ p.date_range }}</span>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
+    {% if remaining > 0 %}
+    <button type="button" class="see-more-toggle" aria-expanded="false" data-count="{{ remaining }}">
+      <span class="see-more-label">See {{ remaining }} more</span>
+      {% include icon.html name="chevron-down" %}
+    </button>
     {% endif %}
   </div>
 </section>

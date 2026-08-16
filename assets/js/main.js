@@ -45,4 +45,27 @@
       observer.observe(section);
     });
   }
+
+  document.querySelectorAll(".see-more-toggle").forEach(function (btn) {
+    var grid = btn.previousElementSibling;
+    if (!grid) return;
+    var extras = grid.querySelectorAll(".is-extra");
+    var count = btn.getAttribute("data-count");
+    var label = btn.querySelector(".see-more-label");
+
+    btn.addEventListener("click", function () {
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      extras.forEach(function (card) {
+        if (expanded) {
+          card.setAttribute("hidden", "");
+        } else {
+          card.removeAttribute("hidden");
+        }
+      });
+      btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      if (label) {
+        label.textContent = expanded ? "See " + count + " more" : "See less";
+      }
+    });
+  });
 })();

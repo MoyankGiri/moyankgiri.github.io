@@ -1,27 +1,48 @@
+{%- assign default_count = 3 -%}
+{%- assign remaining = site.data.experience.size | minus: default_count -%}
 <section id="experience">
   <div class="container">
     <div class="section-header">
-      <h2>Experience</h2>
+      <div class="eyebrow">Experience</div>
+      <h2>Where I've worked</h2>
     </div>
 
-    <div class="timeline">
+    <div class="card-grid" data-see-more>
       {% for job in site.data.experience %}
-      <div class="timeline-entry">
-        <div class="timeline-meta">
-          <div class="role">{{ job.role }}</div>
-          <div class="company">{{ job.company }}</div>
-          <div class="duration">{{ job.duration }}</div>
-          <div class="location">{{ job.location }} &middot; {{ job.mode }}</div>
+      {%- assign is_extra = false -%}
+      {%- if forloop.index0 >= default_count -%}{%- assign is_extra = true -%}{%- endif -%}
+      <article class="dark-card entry-card{% if is_extra %} is-extra{% endif %}"{% if is_extra %} hidden{% endif %}>
+        <div class="entry-card__header">
+          {% if job.logo != "" %}
+          <div class="logo-tile"><img src="{{ job.logo | relative_url }}" alt="{{ job.company }} logo"></div>
+          {% else %}
+          {%- assign initials = "" -%}
+          {%- for word in job.company | split: " " -%}
+            {%- assign first_char = word | slice: 0, 1 -%}
+            {%- assign initials = initials | append: first_char -%}
+          {%- endfor -%}
+          <div class="logo-tile is-monogram">{{ initials | slice: 0, 2 }}</div>
+          {% endif %}
+          <div class="entry-card__title-block">
+            <div class="role">{{ job.role }}</div>
+            <div class="org">{{ job.company }}</div>
+            <div class="duration">{{ job.duration }} &middot; {{ job.location }}</div>
+          </div>
         </div>
-        <div class="timeline-body">
-          <ul>
-            {% for bullet in job.bullets %}
-            <li>{{ bullet }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+        <ul class="entry-card__bullets">
+          {% for bullet in job.bullets %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+      </article>
       {% endfor %}
     </div>
+
+    {% if remaining > 0 %}
+    <button type="button" class="see-more-toggle" aria-expanded="false" data-count="{{ remaining }}">
+      <span class="see-more-label">See {{ remaining }} more</span>
+      {% include icon.html name="chevron-down" %}
+    </button>
+    {% endif %}
   </div>
 </section>

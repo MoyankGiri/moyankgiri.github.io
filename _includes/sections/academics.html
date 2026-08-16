@@ -1,20 +1,39 @@
+{%- assign default_count = 2 -%}
+{%- assign remaining = site.data.education.size | minus: default_count -%}
 <section id="academics">
   <div class="container">
     <div class="section-header">
-      <h2>Academics</h2>
+      <div class="eyebrow">Academics</div>
+      <h2>Education</h2>
     </div>
 
-    <div class="academics-grid">
+    <div class="card-grid" data-see-more>
       {% for edu in site.data.education %}
-        {% if edu.highlights.size > 0 or edu.courses.size > 0 %}
-      <div class="edu-card">
-        <div class="degree">{{ edu.degree }}</div>
-        <div class="institution">{{ edu.institution }}</div>
-        <div class="duration">{{ edu.duration }}</div>
-        {% if edu.grade != "" %}<div class="grade">{{ edu.grade }}</div>{% endif %}
+      {%- assign is_extra = false -%}
+      {%- if forloop.index0 >= default_count -%}{%- assign is_extra = true -%}{%- endif -%}
+      <article class="dark-card entry-card{% if is_extra %} is-extra{% endif %}"{% if is_extra %} hidden{% endif %}>
+        <div class="entry-card__header">
+          {% if edu.logo != "" %}
+          <div class="logo-tile"><img src="{{ edu.logo | relative_url }}" alt="{{ edu.institution }} logo"></div>
+          {% else %}
+          {%- assign initials = "" -%}
+          {%- for word in edu.institution | split: " " -%}
+            {%- assign first_char = word | slice: 0, 1 -%}
+            {%- assign initials = initials | append: first_char -%}
+          {%- endfor -%}
+          <div class="logo-tile is-monogram">{{ initials | slice: 0, 2 }}</div>
+          {% endif %}
+          <div class="entry-card__title-block">
+            <div class="role">{{ edu.degree }}</div>
+            <div class="org">{{ edu.institution }}</div>
+            <div class="duration">{{ edu.duration }}</div>
+          </div>
+        </div>
+
+        {% if edu.grade != "" %}<div class="metric">{{ edu.grade }}</div>{% endif %}
 
         {% if edu.highlights.size > 0 %}
-        <ul class="highlights">
+        <ul class="entry-card__bullets">
           {% for h in edu.highlights %}
           <li>{{ h }}</li>
           {% endfor %}
@@ -22,34 +41,21 @@
         {% endif %}
 
         {% if edu.courses.size > 0 %}
-        <div class="courses">
+        <div class="chip-row" style="margin-top: var(--spacing-20);">
           {% for c in edu.courses %}
-          <span class="tag">{{ c }}</span>
+          <span class="skill-chip">{{ c }}</span>
           {% endfor %}
         </div>
         {% endif %}
-      </div>
-        {% endif %}
+      </article>
       {% endfor %}
-
-      <div class="edu-card-secondary">
-        {% for edu in site.data.education %}
-          {% unless edu.highlights.size > 0 or edu.courses.size > 0 %}
-        <div class="edu-item">
-          <div class="degree">{{ edu.degree }}</div>
-          <div class="institution">{{ edu.institution }}</div>
-          <div class="duration">{{ edu.duration }}</div>
-          {% if edu.grade != "" %}<div class="grade">{{ edu.grade }}</div>{% endif %}
-        </div>
-          {% endunless %}
-        {% endfor %}
-      </div>
     </div>
 
-    <ul class="achievements-list">
-      {% for item in site.data.achievements %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
+    {% if remaining > 0 %}
+    <button type="button" class="see-more-toggle" aria-expanded="false" data-count="{{ remaining }}">
+      <span class="see-more-label">See {{ remaining }} more</span>
+      {% include icon.html name="chevron-down" %}
+    </button>
+    {% endif %}
   </div>
 </section>

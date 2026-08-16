@@ -1,0 +1,27 @@
+{%- assign default_count = 4 -%}
+{%- assign remaining = site.data.achievements.size | minus: default_count -%}
+<section id="achievements">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Accomplishments</div>
+      <h2>Scholarships & extracurriculars</h2>
+    </div>
+
+    <div class="card-grid" data-see-more>
+      {% for item in site.data.achievements %}
+      {%- assign is_extra = false -%}
+      {%- if forloop.index0 >= default_count -%}{%- assign is_extra = true -%}{%- endif -%}
+      <article class="dark-card dark-card--plain achievement-card{% if is_extra %} is-extra{% endif %}"{% if is_extra %} hidden{% endif %}>
+        <p>{{ item }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if remaining > 0 %}
+    <button type="button" class="see-more-toggle" aria-expanded="false" data-count="{{ remaining }}">
+      <span class="see-more-label">See {{ remaining }} more</span>
+      {% include icon.html name="chevron-down" %}
+    </button>
+    {% endif %}
+  </div>
+</section>
