@@ -1,0 +1,55 @@
+<section id="academics">
+  <div class="container">
+    <div class="section-header">
+      <h2>Academics</h2>
+    </div>
+
+    <div class="academics-grid">
+      {% for edu in site.data.education %}
+        {% if edu.highlights.size > 0 or edu.courses.size > 0 %}
+      <div class="edu-card">
+        <div class="degree">{{ edu.degree }}</div>
+        <div class="institution">{{ edu.institution }}</div>
+        <div class="duration">{{ edu.duration }}</div>
+        {% if edu.grade != "" %}<div class="grade">{{ edu.grade }}</div>{% endif %}
+
+        {% if edu.highlights.size > 0 %}
+        <ul class="highlights">
+          {% for h in edu.highlights %}
+          <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if edu.courses.size > 0 %}
+        <div class="courses">
+          {% for c in edu.courses %}
+          <span class="tag">{{ c }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+        {% endif %}
+      {% endfor %}
+
+      <div class="edu-card-secondary">
+        {% for edu in site.data.education %}
+          {% unless edu.highlights.size > 0 or edu.courses.size > 0 %}
+        <div class="edu-item">
+          <div class="degree">{{ edu.degree }}</div>
+          <div class="institution">{{ edu.institution }}</div>
+          <div class="duration">{{ edu.duration }}</div>
+          {% if edu.grade != "" %}<div class="grade">{{ edu.grade }}</div>{% endif %}
+        </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <ul class="achievements-list">
+      {% for item in site.data.achievements %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

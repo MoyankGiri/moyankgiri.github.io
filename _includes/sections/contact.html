@@ -1,0 +1,22 @@
+{%- assign s = site.data.site -%}
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header" style="margin-left:auto;margin-right:auto;">
+      <h2>Contact</h2>
+    </div>
+    <p class="section-lead" style="margin-left:auto;margin-right:auto;">Open to conversations on data science, AI research, and new opportunities. Reach out any time.</p>
+
+    <div class="contact-actions">
+      <a class="btn btn-primary" href="mailto:{{ s.email }}">{% include icon.html name="mail" %} Get in touch</a>
+      <a class="btn btn-ghost" href="{{ s.resume_pdf | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="download" %} Download résumé</a>
+    </div>
+
+    <div class="social-links contact-social">
+      <a class="social-link" href="{{ s.github }}" target="_blank" rel="me noopener" aria-label="GitHub">{% include icon.html name="github" %}</a>
+      <a class="social-link" href="{{ s.linkedin }}" target="_blank" rel="me noopener" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>
+      <a class="social-link" href="mailto:{{ s.email }}" aria-label="Email">{% include icon.html name="mail" %}</a>
+      <a class="social-link" href="tel:{{ s.phone | replace: ' ', '' }}" aria-label="Phone">{% include icon.html name="phone" %}</a>
+      <a class="social-link" href="{{ s.whatsapp }}" target="_blank" rel="noopener" aria-label="WhatsApp">{% include icon.html name="whatsapp" %}</a>
+    </div>
+  </div>
+</section>

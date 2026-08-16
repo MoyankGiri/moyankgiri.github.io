@@ -1,0 +1,54 @@
+- institution: "Indian Institute of Technology, Bhilai"
+  degree: "M.Tech, Data Science & Artificial Intelligence"
+  duration: "July 2023 - June 2025"
+  grade: "CGPA 9.6 / 10 (2nd highest in the DSAI 2023-25 batch)"
+  highlights:
+    - "M.Tech research thesis in Large Language Models, sponsored by Ohio State University, USA (July 2024 - February 2025)"
+    - "Received 4 full-time employment offers on completion of the M.Tech"
+    - "Offered a PhD position at Ohio State University after 8 months as a Research Scholar"
+    - "Offered an Integrated PhD at IIT Bhilai by thesis supervisor"
+    - "Admitted via GATE 2023, ranked in the top 2%"
+  courses:
+    - "Machine Learning"
+    - "Adversarial Machine Learning"
+    - "Advanced Data Structures & Algorithms"
+    - "Parallelization of Programs"
+    - "Computer System Design"
+
+- institution: "PES University"
+  degree: "B.Tech, Computer Science & Engineering"
+  duration: "August 2019 - June 2023"
+  grade: "CGPA 9.0 / 10"
+  highlights:
+    - "Specialization in Machine Intelligence and Data Science"
+    - "Received 2 full-time employment offers on completion of the B.Tech"
+  courses:
+    - "Machine Intelligence"
+    - "Database Management Systems"
+    - "Computer Vision & Image Processing"
+    - "Data Analytics"
+    - "Statistics for Data Science"
+    - "Data Structures & Applications"
+    - "Cloud Computing"
+    - "Automated Information Retrieval"
+
+- institution: "Narayana PU College, Bangalore"
+  degree: "PCMC (12th)"
+  duration: "2017 - 2019"
+  grade: "90.6% | JEE Mains percentile 96.51"
+  highlights: []
+  courses: []
+
+- institution: "Narayana E-Techno School"
+  degree: "10th, CBSE"
+  duration: "2015 - 2017"
+  grade: "10 / 10 CGPA"
+  highlights: []
+  courses: []
+
+- institution: "Kendriya Vidyalaya DRDO"
+  degree: "Schooling"
+  duration: "2007 - 2015"
+  grade: ""
+  highlights: []
+  courses: []

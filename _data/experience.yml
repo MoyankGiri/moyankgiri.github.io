@@ -1,0 +1,68 @@
+- company: "ZS Associates"
+  role: "Advanced Data Science Associate Consultant"
+  duration: "June 2025 - Present"
+  location: "Bengaluru, India"
+  mode: "Hybrid"
+  bullets:
+    - "Developed and deployed a production LLM-based classification pipeline to identify HCP engagement stage and therapy-area expertise using historical interaction data and pharma activity signals processed via Python, SQL, and Databricks, achieving approximately 90% classification accuracy."
+    - "Designed, developed, and deployed a personalized content navigator using RAG-enabled LLMs and Databricks to surface medical content based on prior HCP interactions, improving content relevance and reducing MSL preparation time."
+
+- company: "Indian Institute of Technology, Bhilai"
+  role: "Researcher"
+  duration: "February 2025 - May 2025"
+  location: "Sigma-cubed Lab, IIT Bhilai, Chhattisgarh, India"
+  mode: "On-site"
+  bullets:
+    - "Implemented a hybrid Federated Split Learning framework with caching and personalization, reducing communication and computation costs by 100x under heterogeneous data conditions."
+
+- company: "The Ohio State University"
+  role: "Research Scholar"
+  duration: "July 2024 - February 2025"
+  location: "AI Edge Institute, Columbus, Ohio, USA"
+  mode: "On-site"
+  bullets:
+    - "Worked on efficient finetuning of LLMs in collaboration with Qualcomm, USA, using layer selection strategies, layer offloading, and novel parameter update approximation techniques, resulting in a 10% reduction in finetuning time and 60% GPU computational savings."
+    - "Used Python, LoRA, NLP, HuggingFace, Transformers, PyTorch, and NumPy in a supercomputing environment for dynamic layer selection and a telecom LLM for discrepancy analysis."
+
+- company: "Indian Institute of Technology, Bhilai"
+  role: "Teaching Assistant"
+  duration: "August 2023 - June 2024"
+  location: "Big Data Technology Lab, IIT Bhilai, Chhattisgarh, India"
+  mode: "On-site"
+  bullets:
+    - "Configured and validated Big Data environments (Hadoop, Hive, Spark, Kafka) on AWS using Python, Docker, and Kubernetes, achieving 100% functional setups."
+    - "Conducted tutorials and hands-on lab sessions on Big Data technologies."
+
+- company: "Hewlett Packard Enterprise"
+  role: "R&D Trainee, Storage"
+  duration: "January 2023 - July 2023"
+  location: "Bangalore, India"
+  mode: "On-site"
+  bullets:
+    - "Developed an end-to-end workflow in the HPE Storage framework using Python, Threading, and ThreadPoolExecutor, resulting in more than 70% reduction in execution time."
+    - "Offered full-time employment on completion of the internship."
+
+- company: "Muxable Labs"
+  role: "Summer Intern"
+  duration: "June 2022 - July 2022"
+  location: "Bangalore, India"
+  mode: "Remote"
+  bullets:
+    - "Implemented the CMT-SCTP protocol in Golang following IETF specifications for video streaming with minimum loss and latency, using Wireshark for protocol analysis."
+    - "Offered full-time employment on completion of the internship."
+
+- company: "Hewlett Packard Enterprise"
+  role: "Intern, HPCTY Program"
+  duration: "February 2022 - July 2022"
+  location: "CCBD, PESU, Bangalore, India"
+  mode: "Hybrid"
+  bullets:
+    - "Built an always-observable cloud application on AWS using Docker, Kubernetes, Prometheus, and Grafana to monitor application-level and service/pod-level metrics and generate alerts."
+
+- company: "PES Innovation Lab"
+  role: "Summer Intern, Neural Music: Generation and Analysis"
+  duration: "May 2020 - July 2020"
+  location: "Bangalore, India"
+  mode: "Remote"
+  bullets:
+    - "Built a model using RNN, LSTM, and Music21 / TensorFlow to generate lead and backing tracks from chosen chord progressions, enabling musicians to create contextual music with enhanced quality and flexibility."

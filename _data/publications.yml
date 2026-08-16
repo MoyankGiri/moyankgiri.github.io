@@ -1,0 +1,23 @@
+- title: "Adaptive Split Federated Learning"
+  venue: "TechRxiv"
+  date: "December 2025"
+  summary: "Built an adaptive split learning framework using gradient-norm-based inference, hybrid loss functions, activation caching, and personalization, achieving up to 100x lower computation and communication cost and 29% higher test-time accuracy under heterogeneous, real-world data."
+  github: "https://github.com/MoyankGiri/Adaptive-Split-Federated-Learning"
+
+- title: "Benchmarking Multimodal AI for Telecom"
+  venue: "arXiv"
+  date: "November 2025"
+  summary: "Curated a telecom-specific multimodal benchmark suite using LLMs and VLMs integrated with multimodal QA, RAG, and PCAP root cause analysis, improving model performance and surfacing actionable insights for real-world telecom workflows."
+  github: ""
+
+- title: "Automated and Interpretable Fake News Detection with Explainable AI"
+  venue: "Journal of Applied Security Research"
+  date: "May 2024"
+  summary: "Designed a high-precision fake news detection system combining machine learning and Explainable AI (XAI) for text and image-based news, achieving over 92% accuracy. First author."
+  github: "https://github.com/MoyankGiri/Applications-of-AI-in-Fake-News-Mitigation"
+
+- title: "Enhancing Safety in Vehicles using Emotion Recognition with Artificial Intelligence"
+  venue: "IEEE Conference I2CT"
+  date: "April 2023"
+  summary: "Engineered an in-vehicle emotion recognition system (83% video, 78% audio accuracy) with music recommendations to stabilize driver emotion and enhance road safety. First author."
+  github: "https://github.com/MoyankGiri/Enhancing-Safety-using-Emotion-Recognition-with-AI"

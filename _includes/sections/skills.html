@@ -1,0 +1,18 @@
+<section id="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2>Skills</h2>
+    </div>
+
+    {% for group in site.data.skills %}
+    <div class="skill-group">
+      <div class="skill-group-title">{{ group.category }}</div>
+      <div class="tag-row">
+        {% for item in group.items %}
+        <span class="tag">{{ item }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

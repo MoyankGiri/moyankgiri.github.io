@@ -1,0 +1,19 @@
+{%- assign s = site.data.site -%}
+<section id="about">
+  <div class="container">
+    <div class="section-header">
+      <h2>About</h2>
+    </div>
+    <div class="about-body">
+      {% capture newline %}
+{% endcapture %}
+      {% assign paragraphs = s.about | split: newline %}
+      {% for para in paragraphs %}
+        {% assign clean = para | strip %}
+        {% if clean != "" %}
+      <p>{{ clean }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

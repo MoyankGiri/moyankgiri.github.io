@@ -1,0 +1,50 @@
+{%- assign featured = site.data.projects | where: "featured", true -%}
+{%- assign more = site.data.projects | where: "featured", false -%}
+<section id="projects">
+  <div class="container">
+    <div class="section-header">
+      <h2>Projects</h2>
+      <p class="section-lead">A selection of applied AI, ML, and systems projects. See more on GitHub.</p>
+    </div>
+
+    <div class="project-grid">
+      {% for p in featured %}
+      <article class="project-card">
+        <div class="org">{{ p.org }}{% if p.date_range != "" %} &middot; {{ p.date_range }}{% endif %}</div>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.summary }}</p>
+        {% if p.skills.size > 0 %}
+        <div class="tag-row">
+          {% for skill in p.skills %}
+          <span class="tag">{{ skill }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if p.github != "" %}
+        <div class="project-links">
+          <a href="{{ p.github }}" target="_blank" rel="noopener">{% include icon.html name="github" %} Source</a>
+        </div>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+
+    {% if more.size > 0 %}
+    <div class="project-more">
+      <div class="project-more-title">More projects</div>
+      <div class="project-more-grid">
+        {% for p in more %}
+        <div class="project-more-item">
+          {% if p.github != "" %}
+          <a class="title" href="{{ p.github }}" target="_blank" rel="noopener">{{ p.title }}</a>
+          {% else %}
+          <span class="title">{{ p.title }}</span>
+          {% endif %}
+          <span class="date">{{ p.date_range }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>

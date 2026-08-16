@@ -1,0 +1,36 @@
+name: "Moyank Giri"
+tagline: "Data Science | ZS | IITian | OSU, USA | HPE | 3+ YOE"
+role: "Advanced Data Science Associate Consultant @ ZS Associates"
+hero_subtitle: "Building production LLM and RAG systems across pharma, telecom, and research. IIT Bhilai alum, ex-Ohio State, ex-HPE."
+location: "Bangalore, India"
+email: "moyankg@iitbhilai.ac.in"
+phone: "+91 7353079403"
+whatsapp: "https://wa.me/917353079403"
+linkedin: "https://linkedin.com/in/moyankgiri"
+github: "https://github.com/MoyankGiri"
+resume_pdf: "/assets/pdfs/resume_updated.pdf"
+avatar: "/assets/img/avatar-icon.png"
+
+about: >
+  I'm Moyank Giri, an Advanced Data Science Associate Consultant at ZS Associates.
+  I'm an alumnus of IIT Bhilai, a former research scholar at Ohio State University,
+  and previously worked with Hewlett Packard Enterprise. I hold an M.Tech in Data
+  Science & Artificial Intelligence and a B.Tech in Computer Science & Engineering,
+  and I've authored four publications across machine learning conferences and journals.
+
+  With 3+ years of hands-on experience in AI, Machine Learning, and Data Science,
+  I've built solutions across Telecom, Automotive, Pharmaceuticals, Operations,
+  Marketing, and Finance. I'm currently based in Bengaluru, focused on sharpening
+  my data science expertise while contributing to AI research and innovation.
+
+nav:
+  - label: "About"
+    href: "#about"
+  - label: "Experience"
+    href: "#experience"
+  - label: "Academics"
+    href: "#academics"
+  - label: "Projects"
+    href: "#projects"
+  - label: "Publications"
+    href: "#publications"

@@ -1,0 +1,111 @@
+- title: "Agentic Marketing Mix"
+  date_range: "December 2025 - January 2026"
+  org: "ZS Associates (AI Hackathon)"
+  summary: "Built an agentic workflow to automate the marketing mix process for an internal AI Hackathon at ZS."
+  skills: ["Agentic AI", "Data Science"]
+  github: ""
+  featured: true
+
+- title: "Agentic AI System for Resume Analysis"
+  date_range: "August 2025 - September 2025"
+  org: "Independent (Proof of Concept)"
+  summary: "Designed a modular agentic pipeline using LangGraph for workflow orchestration, LangChain for RAG, and Google Generative AI for scoring and recommendations, wrapped in a Streamlit interface and deployed on Render with GitHub Actions CI/CD to Azure for real-time resume analysis."
+  skills: ["LangGraph", "LangChain", "RAG", "Streamlit", "GitHub Actions", "Azure"]
+  github: "https://github.com/MoyankGiri/resume-analyzer-ai"
+  featured: true
+
+- title: "Adaptive Split Federated Learning"
+  date_range: "August 2024 - May 2025"
+  org: "Indian Institute of Technology, Bhilai"
+  summary: "Built an adaptive split learning framework using gradient-norm-based inference, hybrid loss functions, activation caching, and personalization, achieving up to 100x lower computation and communication cost and 29% higher test-time accuracy under heterogeneous, real-world data."
+  skills: ["Python", "Machine Learning", "Split Learning", "Federated Learning"]
+  github: "https://github.com/MoyankGiri/Efficient-training-of-LLMs-and-Federated-Learning"
+  featured: true
+
+- title: "Benchmarking Multimodal AI for Telecom"
+  date_range: "November 2024 - March 2025"
+  org: "Indian Institute of Technology, Bhilai"
+  summary: "Built a telecom-specific multimodal benchmark suite using LLMs and VLMs integrated with multimodal QA, RAG, and PCAP root cause analysis, improving model performance and reducing hallucinations."
+  skills: ["Python", "LLM", "VLM", "RAG"]
+  github: ""
+  featured: true
+
+- title: "Lead and Interaction Management System"
+  date_range: "December 2024"
+  org: "Indian Institute of Technology, Bhilai"
+  summary: "Designed an end-to-end lead management system for tracking leads, interactions, and performance metrics, integrating FastAPI, Streamlit, and PostgreSQL in a Dockerized, scalable architecture."
+  skills: ["FastAPI", "Streamlit", "PostgreSQL", "Docker Compose"]
+  github: "https://github.com/MoyankGiri/Lead-and-Interaction-Management-System"
+  featured: true
+
+- title: "AI Chatbot for Efficient Network Troubleshooting"
+  date_range: "February 2024 - May 2024"
+  org: "Indian Institute of Technology, Bhilai"
+  summary: "Built an AI chatbot for network troubleshooting using advanced RAG retrieval over fine-tuned open-source LLMs and self-hosted databases for optimized performance and scalability."
+  skills: ["LLM", "Advanced RAG", "Model Training"]
+  github: "https://github.com/MoyankGiri/AI_Chatbot_for_Efficient_Network_Troubleshooting"
+  featured: true
+
+- title: "Inter-IIT Tech Meet: Tweet Content and Behaviour Simulation"
+  date_range: "October 2023 - December 2023"
+  org: "Adobe Behaviour Simulation Challenge, Inter-IIT Tech Meet"
+  summary: "Unified multimodal tweet inputs into text using captioning and TensorFlow/HuggingFace, enabling behavior prediction with regression models and content generation with LLMs."
+  skills: ["Python", "TensorFlow", "HuggingFace", "LLM"]
+  github: "https://github.com/MoyankGiri/Adobe_Challenge-Tweet_Content_and_Behaviour_Simulation"
+  featured: false
+
+- title: "Company 360: A Deep Learning Approach for Company Analysis"
+  date_range: "September 2023 - November 2023"
+  org: "Indian Institute of Technology, Bhilai"
+  summary: "Built a machine learning pipeline integrating ETL, data mining, and predictive modeling using LSTM, Transformers, and HuggingFace for comprehensive company analysis."
+  skills: ["LSTM", "Transformers", "HuggingFace"]
+  github: "https://github.com/MoyankGiri/Company360_MLProject2023"
+  featured: false
+
+- title: "Automated Tailgating Detection System"
+  date_range: "May 2022 - June 2022"
+  org: "PES University (VMware Virtual Hackathon)"
+  summary: "Developed a real-time tailgating detection system using MobileNetSSD and object tracking for enhanced security."
+  skills: ["OpenCV", "imutils", "MobileNetSSD"]
+  github: "https://github.com/MoyankGiri/Automated_Tailgating_Detection_System"
+  featured: false
+
+- title: "Credit Card Customer Churn Prediction"
+  date_range: "October 2021 - December 2021"
+  org: "PES University"
+  summary: "Designed a customer churn prediction system using Random Forest, AdaBoost, and SVM for early churn detection."
+  skills: ["Random Forest", "AdaBoost", "SVM"]
+  github: "https://github.com/MoyankGiri/DataAnalyticsProject_Customer_Churn_Prediction"
+  featured: false
+
+- title: "Lifestyle Management Application"
+  date_range: "February 2021 - May 2021"
+  org: "PES University"
+  summary: "Built an Android lifestyle management app with activity tracking to help users achieve health and wellness goals."
+  skills: ["Java", "Android", "Firebase"]
+  github: "https://github.com/MoyankGiri/LifestyleManagementApp"
+  featured: false
+
+- title: "Pattern Analysis and Ambiguity Detection"
+  date_range: "August 2020 - November 2020"
+  org: "PES University"
+  summary: "Conducted pattern analysis and ambiguity detection on a selection process dataset, identifying key factors affecting candidate outcomes."
+  skills: ["Pandas", "Matplotlib", "ETL"]
+  github: ""
+  featured: false
+
+- title: "Campus Food Delivery System"
+  date_range: ""
+  org: "Indian Institute of Technology, Bhilai"
+  summary: "Built an end-to-end campus food delivery system connecting restaurants and students using FastAPI, Docker, AWS, and Android."
+  skills: ["Docker", "AWS", "FastAPI", "Android"]
+  github: "https://github.com/MoyankGiri/Campus-Food-Delivery-System"
+  featured: false
+
+- title: "Neural Music: Generation and Analysis"
+  date_range: "May 2020 - July 2020"
+  org: "PES Innovation Lab"
+  summary: "Created a web app using RNN and LSTM to generate lead and backing tracks for chosen chord progressions."
+  skills: ["RNN", "LSTM", "Music21", "TensorFlow"]
+  github: ""
+  featured: false
