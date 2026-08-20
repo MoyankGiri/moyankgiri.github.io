@@ -7,12 +7,12 @@
       {% capture newline %}
 {% endcapture %}
       {%- assign highlighted = s.about
-        | replace: "ZS Associates", "<span class=\"hl\">ZS Associates</span>"
-        | replace: "IIT Bhilai", "<span class=\"hl\">IIT Bhilai</span>"
-        | replace: "Ohio State University", "<span class=\"hl\">Ohio State University</span>"
-        | replace: "Hewlett Packard Enterprise", "<span class=\"hl\">Hewlett Packard Enterprise</span>"
-        | replace: "AI, Machine Learning, and Data Science", "<span class=\"hl\">AI, Machine Learning, and Data Science</span>"
-        | replace: "AI research and innovation", "<span class=\"hl\">AI research and innovation</span>" -%}
+        | replace: "ZS Associates", '<span class="hl">ZS Associates</span>'
+        | replace: "IIT Bhilai", '<span class="hl">IIT Bhilai</span>'
+        | replace: "Ohio State University", '<span class="hl">Ohio State University</span>'
+        | replace: "Hewlett Packard Enterprise", '<span class="hl">Hewlett Packard Enterprise</span>'
+        | replace: "AI, Machine Learning, and Data Science", '<span class="hl">AI, Machine Learning, and Data Science</span>'
+        | replace: "AI research and innovation", '<span class="hl">AI research and innovation</span>' -%}
       {% assign paragraphs = highlighted | split: newline %}
       {% for para in paragraphs %}
         {% assign clean = para | strip %}
