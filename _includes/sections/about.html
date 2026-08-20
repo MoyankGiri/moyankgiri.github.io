@@ -1,14 +1,19 @@
 {%- assign s = site.data.site -%}
 <section id="about">
-  <div class="container">
-    <div class="section-header">
+  <div class="container about-grid">
+    <div class="about-copy">
       <div class="eyebrow">About</div>
       <h2>Who I am</h2>
-    </div>
-    <div class="about-body">
       {% capture newline %}
 {% endcapture %}
-      {% assign paragraphs = s.about | split: newline %}
+      {%- assign highlighted = s.about
+        | replace: "ZS Associates", "<span class=\"hl\">ZS Associates</span>"
+        | replace: "IIT Bhilai", "<span class=\"hl\">IIT Bhilai</span>"
+        | replace: "Ohio State University", "<span class=\"hl\">Ohio State University</span>"
+        | replace: "Hewlett Packard Enterprise", "<span class=\"hl\">Hewlett Packard Enterprise</span>"
+        | replace: "AI, Machine Learning, and Data Science", "<span class=\"hl\">AI, Machine Learning, and Data Science</span>"
+        | replace: "AI research and innovation", "<span class=\"hl\">AI research and innovation</span>" -%}
+      {% assign paragraphs = highlighted | split: newline %}
       {% for para in paragraphs %}
         {% assign clean = para | strip %}
         {% if clean != "" %}
@@ -16,5 +21,13 @@
         {% endif %}
       {% endfor %}
     </div>
+    {% if s.avatar %}
+    <div class="about-portrait-wrap">
+      <div class="dotted-grid-motif" aria-hidden="true"></div>
+      <div class="about-portrait">
+        <img src="{{ s.avatar | relative_url }}" alt="{{ s.name }}">
+      </div>
+    </div>
+    {% endif %}
   </div>
 </section>

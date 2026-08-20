@@ -1,297 +1,248 @@
 # Portfolio — Style Reference
-> Deep-space personal portfolio with electric blue signals
+> True-black developer portfolio with a single spring-green signal, heavy grotesk headlines, and structured content patterns (stat row, tabbed timeline, filterable project gallery)
 
 **Theme:** dark
 
-This portfolio runs on a deep-space canvas: near-black navy surfaces, whisper-thin type at display weights, and a single electric cobalt-blue accent that lights the interface like circuit current. Surfaces stack dark-on-dark, separated by hairline lavender-tinted borders rather than elevation, giving the page a flat, architectural depth. The voice is restrained and premium — generous radii, plenty of negative space, and color used sparingly so the blue accent always reads as intentional. Type is the signature: weight-100 headlines on a geometric face float above the page rather than commanding it, creating authority through restraint. Everything that lists comparable things — education, experience, projects, accomplishments — is presented as consistent cards, never as loose text, so the whole site reads as one deliberate system.
+This portfolio runs on a true-black canvas with one vivid spring-green accent doing all the chromatic work. The signature is a heavy geometric grotesk set very large — the name fills the hero at display scale with a trailing period. Green never fills big buttons; it lives in small, high-value places: the eyebrow line, inline keyword highlights, link arrows, icon glyphs, and selected-state accents. Depth is flat — surfaces separate through a faint white-alpha hairline and a one-step shift from black to near-black, never shadows. Structured content is never dumped as loose text: quick facts sit in a **stat-box row**, career history sits in a **tabbed timeline**, and work sits in a **filterable card gallery**. Body copy is quiet system-ui; the personality comes from scale, the green, and the negative space.
+
+> **Extraction notes.** Tokens (colors, type, radii) come from the site's screenshots and its Chakra UI CSS. Confirmed from CSS: body font `system-ui, sans-serif`; base line-height `1.5`; site border `rgba(255,255,255,0.16)` (Chakra whiteAlpha.300); scrollbar track `#080808`, thumb `#111111` (8px); selection `#90CDF4` on `#FEFEFE`; focus ring `#4299E1`. The display typeface and the exact green are eyeballed (best-match grotesk; green is a sampled approximation) — verify against the live stylesheet.
+>
+> **Three layout patterns below — stat row, tabbed timeline, filterable gallery — are adopted from additional reference screenshots.** Those screenshots use a **violet** accent (~`#8B5CF6`); it has been **mapped to the system's Spring Green** so the site keeps one signal color. If a violet accent is actually wanted, swap `--color-spring-green` accordingly and it will propagate.
 
 ## Tokens — Colors
 
 | Name | Value | Token | Role |
 |------|-------|-------|------|
-| Void Navy | `#03081a` | `--color-void-navy` | Page canvas and primary dark surface — the base layer everything else floats on |
-| Deep Indigo | `#020626` | `--color-deep-indigo` | Card surfaces, raised panels, and secondary structural fills |
-| Inkline Violet | `#292f66` | `--color-inkline-violet` | Hairline dividers, card borders, icon strokes — the structural skeleton color |
-| Quartz Lavender | `#aab1f2` | `--color-quartz-lavender` | Secondary text, outlined link borders, muted body copy, inactive navigation |
-| Mist Lilac | `#7a83cc` | `--color-mist-lilac` | Tertiary text and supporting UI elements needing softer contrast |
-| Dusk Iris | `#4d5499` | `--color-dusk-iris` | Muted borders, disabled states, low-priority card outlines |
-| Glacier White | `#f5f6ff` | `--color-glacier-white` | Light-theme card surfaces, light section backgrounds, high-contrast text on dark |
-| Pure White | `#ffffff` | `--color-pure-white` | Primary headlines, primary text on dark, nav and button borders |
-| Pulse Cobalt | `#3d50fc` | `--color-pulse-cobalt` | Primary action buttons, active states, key icons, brand signal — the single vivid accent that powers the entire interface |
-| Signal Teal | `#05e0e0` | `--color-signal-teal` | Secondary accent for icons, tertiary links, gradient terminal, and data-viz highlights |
-| Cyan Teal | `#05cee0` | `--color-cyan-teal` | Decorative gradient origin and atmospheric illustration accent |
-| Gradient Teal-Blue | `linear-gradient(90deg, rgb(5, 161, 201) 0%, rgb(61, 80, 252) 100%)` | `--color-gradient-teal-blue` | Hero gradient banner, brand transition washes — teal flowing into cobalt creates a continuous energy signal |
+| Ink Black | `#080808` | `--color-ink` | Page canvas — true-black base (matches scrollbar track) |
+| Pure Black | `#000000` | `--color-pure-black` | Full-bleed bands a notch deeper than canvas |
+| Coal | `#111111` | `--color-coal` | Card / panel / elevated surface (matches scrollbar thumb) |
+| Onyx | `#161616` | `--color-onyx` | Chip, tag-pill, social-button, sidebar-row fills |
+| Spring Green | `#4ADE80` | `--color-spring-green` | The single accent — eyebrow, inline highlights, link arrows, icon glyphs, stat icon tint, active org text. *Approximate; may be Chakra green.400 `#48BB78`.* |
+| Green Hover | `#38B26B` | `--color-green-hover` | Hover/pressed state for green links and icons |
+| Off White | `#FEFEFE` | `--color-off-white` | Primary headline text; **fill color for selected/active chips** (tabs, date pills, active filter) |
+| Pure White | `#FFFFFF` | `--color-white` | Max-contrast text, nav links, tag-pill labels |
+| Gray 300 | `#CBD5E0` | `--color-gray-300` | Bright secondary text, tag labels |
+| Gray 400 | `#A0AEC0` | `--color-gray-400` | Body text, descriptions, inactive filter labels |
+| Gray 500 | `#718096` | `--color-gray-500` | Captions, section eyebrows in the sidebar, fine metadata |
+| Gray 700 | `#2D3748` | `--color-gray-700` | Dotted-grid dots, solid low-contrast dividers |
+| Hairline | `rgba(255,255,255,0.16)` | `--color-hairline` | Site-wide border — nav underline, card/sidebar edges, timeline rail |
+| Selection Blue | `#90CDF4` | `--color-selection` | Text-selection highlight background |
+| Focus Ring | `#4299E1` | `--color-focus-ring` | Keyboard focus ring (60% alpha) |
 
 ## Tokens — Typography
 
-### Times — Times — detected in extracted data but not described by AI · `--font-times`
-- **Weights:** 400
-- **Sizes:** 16px
-- **Line height:** 1.2
-- **Role:** Times — detected in extracted data but not described by AI
+### Display Grotesk — Heavy geometric grotesk for the name, section headings, stat numbers, timeline titles, and nav. Very bold (700–800), large, slightly tight tracking; headings often end in a period. The site's whole personality. *Family inferred — Sora / Space Grotesk / Poppins; verify.* · `--font-display`
+- **Substitute:** Sora, Space Grotesk, Poppins, General Sans
+- **Weights:** 500, 600, 700, 800
+- **Sizes:** 14, 18, 20, 24, 28, 32, 48, 72, 128
+- **Line height:** 1.00–1.20
+- **Letter spacing:** -0.02em at display sizes, normal at label sizes
+- **Role:** Heavy grotesk for the name, section headings, stat numbers, timeline entry titles, and nav.
 
-### Plain — Primary interface typeface. Weight 100 for large display and heading sizes (42–147px), weight 300 for body, weight 400 for emphasized inline text. The ultralthin weights are the defining signature — no other fintech brand runs 100-weight at this scale. Substitute: Inter (light/extra-light), Neue Haas Grotesk Display Thin, or Untitled Sans Light. · `--font-plain`
-- **Substitute:** Inter, Neue Haas Grotesk Display Thin, Untitled Sans Light
-- **Weights:** 100, 300, 400
-- **Sizes:** 10px, 13px, 14px, 16px
-- **Line height:** 1.20, 1.30
-- **Letter spacing:** 0.2500em at 10px (tracked eyebrow/label style), normal at body sizes
-- **Role:** Primary interface typeface. Weight 100 for large display and heading sizes (42–147px), weight 300 for body, weight 400 for emphasized inline text. The ultralthin weights are the defining signature — no other fintech brand runs 100-weight at this scale. Substitute: Inter (light/extra-light), Neue Haas Grotesk Display Thin, or Untitled Sans Light.
-
-### Plain Light — Long-form body copy, description paragraphs, and card detail text. Weight 300 keeps long passages airy and scannable against the dark canvas. The 1.80 line-height variant is used for spacious paragraph blocks. Substitute: Inter Light, Untitled Sans Light. · `--font-plain-light`
-- **Substitute:** Inter Light, Untitled Sans Light
-- **Weights:** 300
-- **Sizes:** 12px, 14px
-- **Line height:** 1.40, 1.50, 1.80
-- **Letter spacing:** normal
-- **Role:** Long-form body copy, description paragraphs, and card detail text. Weight 300 keeps long passages airy and scannable against the dark canvas. The 1.80 line-height variant is used for spacious paragraph blocks. Substitute: Inter Light, Untitled Sans Light.
-
-### Plain Ultralight — Subheadings, section headers within cards, and product category labels. Weight 100 at 28px stays in the same whisper register as the display sizes but at a scannable mid-scale. Substitute: Inter ExtraLight, Neue Haas Grotesk Display Thin. · `--font-plain-ultralight`
-- **Substitute:** Inter ExtraLight, Neue Haas Grotesk Display Thin
-- **Weights:** 100
-- **Sizes:** 28px
-- **Line height:** 1.30
-- **Letter spacing:** -0.56px (-0.02em)
-- **Role:** Subheadings, section headers within cards, and product category labels. Weight 100 at 28px stays in the same whisper register as the display sizes but at a scannable mid-scale. Substitute: Inter ExtraLight, Neue Haas Grotesk Display Thin.
-
-### Plain Ultrathin — Hero headlines, display text, and section-leading titles. Weight 100 at 147px is the brand's most extreme typographic move — the characters nearly dissolve into hairlines, which is why the vivid blue accent and surrounding negative space carry so much of the visual weight. Substitute: Inter Thin, Neue Haas Grotesk Display Thin. · `--font-plain-ultrathin`
-- **Substitute:** Inter Thin, Neue Haas Grotesk Display Thin
-- **Weights:** 100
-- **Sizes:** 42px, 56px, 83px, 147px
-- **Line height:** 0.80, 1.00, 1.10, 1.20
-- **Letter spacing:** -0.84px at 42px, -1.12px at 56px, -1.66px at 83px, -2.94px at 147px (all -0.02em)
-- **Role:** Hero headlines, display text, and section-leading titles. Weight 100 at 147px is the brand's most extreme typographic move — the characters nearly dissolve into hairlines, which is why the vivid blue accent and surrounding negative space carry so much of the visual weight. Substitute: Inter Thin, Neue Haas Grotesk Display Thin.
+### System Sans — Body copy, descriptions, timeline paragraphs, card blurbs, filter labels, tag-pill text. Confirmed base family (`system-ui, sans-serif`), weight 400–600, line-height 1.5. Neutral so the display type and green carry character. · `--font-body`
+- **Substitute:** -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 12, 13, 14, 16, 18, 20
+- **Line height:** 1.5
+- **Role:** Body copy and all small structural text; keyword spans inside it are Spring Green.
 
 ### Type Scale
 
-| Role | Size | Line Height | Letter Spacing | Token |
-|------|------|-------------|----------------|-------|
-| eyebrow | 10px | 1.2 | 2.5px | `--text-eyebrow` |
-| caption | 12px | 1.5 | — | `--text-caption` |
-| body | 16px | 1.3 | — | `--text-body` |
-| subheading | 28px | 1.3 | -0.56px | `--text-subheading` |
-| heading-sm | 42px | 1.1 | -0.84px | `--text-heading-sm` |
-| heading | 56px | 1.1 | -1.12px | `--text-heading` |
-| heading-lg | 83px | 1 | -1.66px | `--text-heading-lg` |
-| display | 147px | 0.8 | -2.94px | `--text-display` |
+| Role | Size | Line Height | Letter Spacing | Weight | Token |
+|------|------|-------------|----------------|--------|-------|
+| tag | 13px | 1.2 | — | 500 | `--text-tag` |
+| caption | 14px | 1.5 | — | 400 | `--text-caption` |
+| body | 16px | 1.5 | — | 400 | `--text-body` |
+| body-lg | 20px | 1.5 | — | 400 | `--text-body-lg` |
+| nav | 18px | 1.2 | — | 700 | `--text-nav` |
+| card-title | 20px | 1.2 | -0.01em | 800 | `--text-card-title` |
+| timeline-title | 24px | 1.15 | -0.01em | 800 | `--text-timeline-title` |
+| subheading | 28px | 1.2 | -0.01em | 700 | `--text-subheading` |
+| stat-number | 32px | 1.0 | -0.01em | 800 | `--text-stat` |
+| heading | 48px | 1.1 | -0.02em | 800 | `--text-heading` |
+| heading-lg | 72px | 1.05 | -0.02em | 800 | `--text-heading-lg` |
+| display | 128px | 1.0 | -0.02em | 800 | `--text-display` |
 
 ## Tokens — Spacing & Shapes
 
-**Base unit:** 4px
-
-**Density:** comfortable
+**Base unit:** 4px · **Density:** comfortable
 
 ### Spacing Scale
-
-| Name | Value | Token |
-|------|-------|-------|
-| 4 | 4px | `--spacing-4` |
-| 16 | 16px | `--spacing-16` |
-| 20 | 20px | `--spacing-20` |
-| 52 | 52px | `--spacing-52` |
-| 64 | 64px | `--spacing-64` |
-| 104 | 104px | `--spacing-104` |
-| 196 | 196px | `--spacing-196` |
+4, 8, 12, 16, 24, 32, 48, 64, 96, 128 px → `--spacing-4` … `--spacing-128`
 
 ### Border Radius
 
 | Element | Value |
 |---------|-------|
-| tags | 17px |
-| cards | 35px |
-| inputs | 35px |
-| buttons | 48px |
+| tag / tech chip (project) | 8px |
+| tag pill (timeline) / date pill / tab / filter row | 9999px (full) |
+| social button | 8px |
+| stat-icon tile | 12px |
+| cards (project, stat, panel) | 16px |
+| media / thumbnail | 12–16px |
+| sidebar panel | 16px |
+| scrollbar thumb | 8px |
+
+### Shadows
+Flat by default — elevation is the black → Coal shift plus the white-alpha hairline. Only shadow token is the focus ring.
+
+| Name | Value | Token |
+|------|-------|-------|
+| focus-ring | `0 0 0 3px rgba(66,153,225,0.6)` | `--shadow-focus` |
 
 ### Layout
+- **Page max-width:** ~1200px (project gallery may go wider, ~1320px, to fit sidebar + 3 columns)
+- **Section gap:** 96–128px
+- **Card padding:** 20–24px · **Sidebar/panel padding:** 16–24px · **Element gap:** 12–16px
 
-- **Page max-width:** 1200px
-- **Section gap:** 64px
-- **Card padding:** 32px
-- **Element gap:** 9px
+## Global Components
 
-## Components
+### Monogram Logo
+A `{i}` monogram in Off White, Display weight 700 at ~24px, subtle metallic treatment on the brackets. ~32px from the left edge.
 
-### Primary Filled Button
-**Role:** Main call-to-action — highest-priority action on a surface (e.g., 'Download résumé', 'Get in touch')
+### Nav Bar
+Transparent over the canvas with a 1px hairline underline. Monogram left; links (Home, Projects, Blog) right in Display weight 700 at 18px, Pure White; active/hover link takes Spring Green. No pills, no fills.
 
-Pulse Cobalt (#3d50fc) fill, Pure White text, 48px border-radius (pill-shaped), 22px horizontal padding × 14px vertical padding. Plain weight 300 at 16px, letter-spacing normal. No shadow, no border. The saturated blue against the deep navy creates a high-voltage focal point without needing elevation.
+### Selected / Active State (convention)
+Selected controls **invert to a light chip**: Off-White (#FEFEFE) fill with Ink (#080808) text. This applies to the active tab, the active filter row, the active view-toggle icon, and date pills. Everything unselected stays transparent/dark with Gray-400 text. This light-invert is the site's only high-contrast UI move besides the green.
 
-### Ghost Outline Button
-**Role:** Secondary action — paired beside primary CTAs (e.g., 'View project', 'Open on GitHub', 'See more')
+### Tag Pill
+Two variants:
+- **Timeline tag** — Onyx (#161616) fill, **full** radius, ~6px×14px padding, label in System Sans weight 500 at 13px, Gray 300 / white. Used in timeline entries.
+- **Project tech chip** — Onyx fill, **8px** radius, ~4px×10px padding, 13px label, plus an overflow chip `+N` (e.g. `+9`) when the list is truncated.
 
-Transparent background, 1px Pure White border (#ffffff), Pure White text, 48px border-radius, 22px × 14px padding. Plain weight 300 at 16px. For secondary navigation-level actions and the "See more" reveal control.
+## Hero & Stats
 
-### Pill Navigation Link
-**Role:** Right-side utility nav items and floating action triggers
+### Eyebrow Line
+Display weight 700 at ~30px in Spring Green ('Hey there!, I'm-'). Sits directly above the name.
 
-Transparent fill, 1px border in Pure White or Quartz Lavender (#aab1f2), white or lavender text, 48px border-radius. 13–14px Plain weight 300–400. The lavender border variant signals a non-primary or secondary nav position.
+### Hero Name
+Display weight 800 at ~96–128px (fluid), Off White, line-height 1.0, tracking -0.02em, trailing period. Left-aligned with the dotted-grid motif behind its top-left.
 
-### Dark Card
-**Role:** The universal container for education, experience, project, and accomplishment entries on dark sections
+### Body Copy with Green Highlights
+System Sans 400 at 16–20px, line-height 1.5, Gray 400. Keywords ('Frontend', 'Open Source', 'AI', the name) are set inline in Spring Green; bold lead-ins ('Full Stack Developer') in Pure White.
 
-Deep Indigo (#020626) background, 1px Inkline Violet (#292f66) border, 35px border-radius, 32px padding. No drop shadow. Cards rely on the violet hairline border and subtle background shift rather than elevation to separate from the void canvas. Every listed item in a section uses this same card — primary and "See more" items alike — so a section never mixes cards with bare text.
+### Social Button
+Onyx fill, 8px radius, ~12px×20px padding, no border. Brand-colored/green glyph left, Pure White label (System Sans 600, 16px). The site's closest thing to a CTA — dark chips with green icons, never green fills.
 
-### Entry Card (Education / Experience)
-**Role:** A single education, experience, or accomplishment record
+### Stat Box (image 3)
+A row of four equal cards near the top of the page (directly below the hero). Each card: Coal (#111111) surface, 1px hairline, 16px radius, ~20px padding, laid out as icon-left / text-right.
+- **Icon tile:** ~48px rounded square (12px radius) with a subtle Spring-Green-tinted translucent/gradient fill (source uses a violet gradient — mapped to green), holding a single light line icon (medal, briefcase, star, people).
+- **Number:** Display weight 800 at ~32px, Off White, e.g. `50+`, `2+`, `99%`, `50+`. The `+`/`%` may take Spring Green.
+- **Label:** System Sans 400 at 14px, Gray 400, e.g. 'Projects Completed', 'Years Experience', 'Client Satisfaction', 'Happy Clients'.
 
-A Dark Card whose top row is an Org Logo Tile (left) beside the title block: title in Plain weight 400 at 18–20px (Pure White), organization in Plain Light 300 at 14px (Quartz Lavender), and a tracked date range in Plain Light 300 at 12px (Mist Lilac). Below the header: an optional metric line (e.g., 'CGPA 9.6 / 10'), a short bulleted body in Plain Light 300 at 14px line-height 1.5, and a wrapped row of Skill Logo Chips at the bottom. Keep the header rhythm identical across every card so a grid of them reads as one system.
+Row is a 4-up grid with 16–24px gaps, collapsing to 2-up then 1-up on smaller screens.
 
-### Org Logo Tile
-**Role:** The institution/company logo that leads every experience and education entry
+## Experience · Education · Achievements — Tabbed Timeline (image 1)
 
-Real logo centered in a 44–48px square tile, 12–14px inner padding, Glacier White (#f5f6ff) fill with a 1px Inkline Violet border and ~14px radius (a smaller, squarer radius than the card). The white tile normalizes logos that ship in clashing brand colors so they read consistently on the navy canvas. Never stretch, crop awkwardly, or recolor the logo; if no logo exists, fall back to a monogram of the org's initials in Plain weight 300, Quartz Lavender.
+### Segmented Tab Control
+A dark rounded-full bar (Onyx/#161616, optional 1px hairline) holding the three tabs: **Experience · Education · Achievements**. The active tab uses the light-invert (Off-White fill, Ink text, full radius); inactive tabs are transparent with Gray-400 text (white on hover), Display weight 600 at ~16px. Centered above the timeline. Switching tabs swaps the timeline content in place.
 
-### Skill Logo Chip
-**Role:** A single skill / tool / technology in the Skills section and on entry cards
+### Timeline Rail
+A single vertical hairline (`whiteAlpha.300`) running down the middle-left of the content area, with a filled ~10px dot at each entry's anchor point. The rail visually threads the entries; it carries no color.
 
-Pill (17px radius), transparent or Deep Indigo fill, 1px Inkline Violet (#292f66) border, 6px × 12px padding, 9px gap between chips. Leads with the technology's real logo at 18–20px (kept at a consistent size and vertically centered), followed by the label in Plain weight 400 at 13–14px, Quartz Lavender. When a technology has no recognizable logo, render the chip as text-only in the same shape so the row stays even.
+### Timeline Entry
+A two-column row anchored to a rail dot:
+- **Left column (right-aligned toward the rail):** a **Date Pill** (light-invert: Off-White fill, Ink bold text, full radius, ~4px×12px — e.g. 'Dec 2023 - April 2026'); below it the **title** in Display weight 800 at ~24px, Pure White (e.g. 'Junior Frontend Developer'); below that the **organization** in Spring Green, System Sans weight 500 at ~16px (e.g. 'Solspro' — this is where the source's violet maps to green).
+- **Right column (left-aligned):** the **description** in System Sans 400 at 16–18px, Gray 400; then a wrapped row of **timeline Tag Pills** (Onyx, full radius) listing tools/skills for that entry.
 
-### See More Toggle
-**Role:** Reveals additional cards in a section beyond the default set
+Entries stack down the rail with generous vertical spacing (48–64px). If a tab has many entries, show the most recent set and reveal older ones with a green 'See more →' link beneath the rail (expanding adds more Timeline Entries, never a text list).
 
-Ghost/text control below a card grid: Plain weight 400 at 14px in Pulse Cobalt (#3d50fc) or Quartz Lavender, with a downward chevron and a count — e.g., 'See 3 more'. Expanding appends the remaining items as full Entry Cards in the same grid (never as text); the control then reads 'See less' with an upward chevron and collapses back to the default set.
+## Projects — Filterable Gallery (image 2)
 
-### Tab Pill
-**Role:** Category selector for filtering projects or skill groups
+### Gallery Toolbar
+A top row above the grid: a full-width **Search input** ('Search projects…', Coal fill, full/large radius, magnifier glyph left); a **Sort dropdown** ('Newest first ▾', Onyx pill); a **View Toggle** (grid / list segmented control, active icon uses the light-invert); and a **result count** ('63 projects', Display weight 700, right-aligned).
 
-Pulse Cobalt (#3d50fc) fill for the active tab, white text, 17px border-radius (smaller pill than buttons), 22px × 14px padding. Inactive tabs are transparent with a faint violet border. 14px Plain weight 400.
+### Filter Sidebar
+A Coal (#111111) panel, 16px radius, 1px hairline, left of the grid. Contains collapsible groups:
+- **Group header** — uppercase System Sans 600 at 12px, Gray 500, with a collapse chevron ('CATEGORY', 'TECH STACK', 'CMS / BUILDERS').
+- **Filter row** — icon + label + right-aligned **count badge**. The active row uses the light-invert (Off-White fill, Ink text, e.g. 'All categories 63'); inactive rows are transparent with Gray-400 label and a muted count badge (e.g. 'Web Development 46', 'Web Tool 4', 'eBay Template 1').
 
-### Eyebrow Label
-**Role:** Small section-prelude text above a heading — e.g. 'EDUCATION', 'EXPERIENCE', 'SELECTED PROJECTS'
+### Project Card
+Coal (#111111) surface, 16px radius, 1px hairline, in a 3-column grid (24px gaps).
+- **Thumbnail** — website screenshot, 12–16px top radius, with two overlays: a **year badge** top-right (dark pill, e.g. '2025') and a **category tag** bottom-left (dark pill with a small icon, e.g. '🌐 Web Changes').
+- **Title** — Display weight 800 at ~20px, Pure White (e.g. 'Mine Jewellery Boutique').
+- **Description** — System Sans 400 at ~14–15px, Gray 400, clamped to 2–3 lines with an ellipsis.
+- **Tech chips** — small Onyx 8px-radius chips (e.g. 'Shopify', 'Product Uploads') with an overflow chip '+9'.
+- **View project button** — full-width, Onyx fill, 8px radius, Pure White label + trailing '↗', subtle hairline. Hover lifts the border / adds green to the arrow.
 
-Plain weight 400 at 10px with 0.25em letter-spacing (2.5px), uppercase, Quartz Lavender (#aab1f2) or Signal Teal (#05e0e0) color. Frames the weight-100 section heading below it and keeps sections visually distinct from one another.
+The gallery paginates or lazy-loads rather than using 'See more'; filters and search drive what's shown.
 
-### Outlined Link
-**Role:** Inline 'Explore →' and 'Learn more' style links within body copy
+## Content & Structure Rules
 
-No background, Quartz Lavender (#aab1f2) 1px bottom border acting as the link underline, lavender text, Plain weight 300 at 16px. The thin lavender rule replaces the traditional solid underline for a lighter, architectural feel.
+Structured content is never dumped as loose text — each content type has one prescribed treatment, applied consistently:
 
-### Hero Headline
-**Role:** The name / primary page title — the largest typographic statement on the page
-
-Plain Ultrathin weight 100, Pure White (#ffffff), 56–83px size range with -0.02em letter-spacing, 1.0–1.1 line-height. Left-aligned with a generous left margin, paired with a role/tagline subtitle and, optionally, an avatar or abstract sculpture on the right.
-
-### Profile Avatar
-**Role:** Portrait/avatar in the hero or About area
-
-Circular or 35px-radius image, 96–160px, framed by a 1px Inkline Violet (#292f66) border on the void canvas, with generous clear space around it. Flat — no drop shadow beyond the border.
-
-### Project Screenshot
-**Role:** In-context project visuals embedded in project cards
-
-Contained within a 35px-radius card with a 1px violet border. Screenshots keep a dark UI with cobalt/teal accents where possible; use a subtle inset border to separate the image from the card background.
-
-### Navigation Menu
-**Role:** Primary top navigation list (About, Experience, Projects, Contact)
-
-Plain weight 300 at 14–16px, Pure White text, no background, ~14px gap between items. The primary action ('Contact' or 'Résumé') renders as a Pulse Cobalt filled pill; a secondary item may render as a 48px-radius ghost pill with a 1px white border.
-
-### Name Lockup
-**Role:** Wordmark in the top-left header position
-
-Optional glyph/monogram in Pure White followed by the name in Plain weight 300 at ~20px, white, 32px from the left edge.
-
-## Content & Card Rules
-
-These rules exist to fix a specific failure mode: primary items shown as polished cards while secondary items collapse into plain text, and two unrelated sections (e.g. education and accomplishments) bleeding together. They are as binding as the token rules.
-
-### Everything in a list is a card
-- Any section that lists comparable records — education, experience, projects, publications, accomplishments, certifications — renders each record as a Dark Card / Entry Card. Never render some records as cards and the rest as bare text rows or a plain column of lines.
-- All cards in a section share one layout: same header rhythm (logo tile → title → org → dates), same padding, same radius, same body/tag treatment. A secondary school entry is the same card shape as a graduate degree, just with less body content.
-
-### Top values first, the rest behind "See more"
-- Show the most important / most recent N records as full cards by default (2–3 in a grid is typical). Hide the remainder.
-- A **See More Toggle** reveals the remaining records as full cards in the same grid — expanding must never produce a text list. Collapsing returns to the default N.
-- Order records by importance or recency so the default set is always the strongest.
-
-### Keep sections separate
-- Each distinct section (Education, Experience, Accomplishments, Projects) keeps its own Eyebrow Label + heading and its own card grid. Never merge two sections into one undifferentiated block, and never let one section's overflow flow visually into the next.
-- If two sections must sit close together, separate them with a full section gap (64px) and their own headings so the boundary is unmistakable.
-
-### Logos in Skills, Experience & Education
-- **Experience & Education entries** lead with an **Org Logo Tile** — the real institution/company logo on a Glacier White tile with a hairline border — placed left of the title block, instead of relying on the org name in text alone.
-- **Skills (and per-card tech tags)** use **Skill Logo Chips**: each skill shows its real tool/technology logo at a consistent 18–20px beside the label, not text-only pills.
-- Normalize logos for consistency: equal sizing, equal padding, seated on a neutral tile; never stretch, distort, or recolor a brand logo. Where no logo exists, fall back to a clean monogram (orgs) or a text-only chip (skills) in the same shape so rows and grids stay even.
+- **Quick facts → Stat Box row** near the top of the page (4-up). Never inline stats as a sentence.
+- **Experience / Education / Achievements → one Tabbed Timeline.** The three live under a single segmented tab control (this is how they stay separate — do not stack them as merged text blocks or three disconnected sections). Each entry is a full Timeline Entry (date pill → title → org → description → tag pills); a secondary/older entry is the same shape as a recent one, just shorter.
+- **Projects → the filterable card Gallery.** Every project is a Project Card of identical shape; category/tech filters and search handle scale.
+- **Any other list (publications, certifications) →** reuse the Project Card grid or the Timeline, whichever fits; never bare rows.
+- **Selected = light-invert.** Active tab, active filter, active view, and date pills all use the Off-White-fill / Ink-text chip. Keep it consistent so 'selected' always reads the same way.
+- **Overflow.** Timelines reveal extra entries with a green 'See more →'; galleries paginate/lazy-load; tag lists truncate with a `+N` chip. Expanding never produces a plain text list.
+- **Logos (reconcile).** These reference screenshots use **text-only** pills for tech/skills and **accent-colored text** (not a logo) for the organization — so text pills are the primary spec here. Your earlier request for real logos still stands as an *option*: you may prefix the org name with a small logo tile and lead skill chips with a tool glyph. Pick one convention and keep it consistent across the site; flag which you want and I'll lock it in.
 
 ## Do's and Don'ts
 
 ### Do
-- Use Plain Ultrathin weight 100 for the name and all section-level headings at 42px or larger
-- Use 48px border-radius for all buttons, nav pills, and the "See more" control; 35px for all cards; 17px for tags/skill chips
-- Use #3d50fc exclusively for primary filled actions and active states — never another color
-- Render every record in a section as a card of the same shape; reveal overflow with a "See more" toggle that shows the rest as cards
-- Lead experience and education cards with the organization's logo on a Glacier White tile; show real tech logos on skill chips
-- Give each section its own eyebrow label + heading and a full 64px gap so sections never blur together
-- Use 0.25em letter-spacing (2.5px) on all 10px uppercase eyebrow labels
-- Separate dark surfaces with 1px #292f66 hairlines, not drop shadows
+- Put quick facts in a 4-up Stat Box row at the top; icon tile + big Display number + gray label
+- Group Experience/Education/Achievements under one segmented tab control with a threaded timeline
+- Use the light-invert (Off-White fill, Ink text) for every selected state — tabs, active filters, active view, date pills
+- Keep the green for small signals — org names, link arrows, icon glyphs, keyword highlights, `+`/`%` accents — not big fills
+- Give project cards a thumbnail with a year badge + category tag overlay, a clamped description, tech chips with a `+N` overflow, and a 'View project ↗' button
+- Use small radii (8px chips, 12–16px cards/tiles); reserve full-pill radius for tabs, filter rows, date pills, and timeline tags
+- Separate surfaces with the hairline + black→Coal shift, not shadows
 
 ### Don't
-- Never dump secondary records (older schooling, extra accomplishments) as plain text rows — keep them as cards behind "See more"
-- Never merge two distinct sections (e.g. education + accomplishments) into one undifferentiated block
-- Never mix logo sizes, stretch, or recolor brand logos — normalize them on equal tiles
-- Never use weight 600 or 700 for headlines — the ultralight register is the signature
-- Never add drop shadows to cards or buttons — the system is flat by design
-- Never use more than one vivid accent color per surface; cobalt and teal should not compete on the same element
-- Never use solid underlines on links — use the 1px Quartz Lavender (#aab1f2) bottom border instead
-- Never set body copy below weight 300, and never use sharp corners (0–4px radius) on cards, buttons, or inputs
-- Never introduce a second dark-canvas color outside #03081a and #020626 — surface depth comes from the two-step shift between them
+- Never inline stats, experience, or projects as running text — use the stat row, timeline, and gallery
+- Never stack Experience/Education/Achievements as three separate merged blocks — they belong under the tab control
+- Never fill large buttons or wide surfaces with green — keep it a signal; CTAs are dark chips with green icons
+- Never set headlines light/thin — the identity is heavy weight (700–800)
+- Never introduce a second accent on functional UI — green is the only signal (the source's violet is mapped to it); blue appears solely in selection/focus
+- Never add drop shadows for elevation, and never use oversized 30px+ radii
+- Never mix logo sizes, stretch, or recolor brand logos if you opt into the logo variant
 
-## Surfaces
+## Surfaces & Elevation
 
 | Level | Name | Value | Purpose |
 |-------|------|-------|---------|
-| 0 | Void Canvas | `#03081a` | Page-level background, the deep-space base layer |
-| 1 | Deep Indigo Card | `#020626` | Card and panel surfaces sitting on the void canvas |
-| 2 | Light Content Surface | `#ffffff` | Light-theme content cards, logo tiles, and section inversions |
+| 0 | Canvas | `#080808` | Page background |
+| 0b | Deep Band | `#000000` | Full-bleed sections a notch deeper |
+| 1 | Card / Panel | `#111111` | Stat boxes, project cards, sidebar, timeline area |
+| 2 | Chip | `#161616` | Tabs, tag pills, filter rows, social buttons |
 
-## Elevation
-
-This system does not use drop shadows for elevation. Depth is achieved through hairline violet borders (#292f66, #4d5499), subtle surface color shifts between #03081a and #020626, and generous border-radius. This flat-architectural approach keeps the dark canvas clean and lets the vivid blue accent do the visual lifting.
+No drop shadows for elevation; depth is the `#080808 → #111111` shift plus the 1px `whiteAlpha.300` hairline. Only shadow token is the blue focus ring.
 
 ## Imagery
 
-The identity is typographic and geometric, with a light, purposeful use of real imagery: an optional profile avatar in the hero/About area, project screenshots inside rounded cards, and — importantly — real organization and technology logos on entry cards and skill chips (seated on neutral tiles so varied brand colors stay consistent). Optional abstract 3D or gradient accents can occupy negative space beside the hero. No stock lifestyle photography. Icons are outlined at 1.5–2px strokes in lavender or cobalt. The overall impression is abstract, premium, and work-focused — the projects and credentials are the visual subject.
+Sparse and purposeful: one circular, slightly-desaturated portrait in the About section; project **thumbnails** (real website screenshots) in the gallery cards with year/category overlays; and single line icons — in the nav, stat tiles, filter rows, and social buttons — often tinted Spring Green. The recurring graphic device is the dotted-grid motif behind the hero name and the portrait. No stock photography, no gradients on functional UI beyond the subtle stat-icon tile tint. Code-forward and confident: big type, black space, a green pulse.
 
 ## Layout
 
-Max-width 1200px centered container with a 32–64px outer gutter. The hero is a full-bleed dark band: the name in weight-100 left-aligned, a role/tagline subtitle beneath, primary + ghost CTAs (résumé, contact), and an optional avatar or abstract accent on the right with 40–80px of breathing room. Below the hero, sections stack with 64px vertical gaps, each opening with an eyebrow label + heading. Education, Experience, Accomplishments, and Projects each render as a grid of equal cards (typically 2–3 across, collapsing to one column on narrow screens), with a "See more" toggle beneath any section that has overflow. Skills render as a wrapped row of logo chips. The top bar sits 24px from the top edge: name lockup left, nav links center/right, primary action pill far right.
+Centered container (~1200px; the gallery widens to fit sidebar + 3 columns). **Nav:** monogram left, links right, hairline underline. **Hero:** left-aligned — dotted grid behind the top-left, green eyebrow, oversized name with period, white+gray tagline, green-highlighted status lines, a row of social chips. **Stat row:** a 4-up Stat Box grid directly below the hero. **About:** two columns — green-highlighted copy left, circular portrait with dotted grid right. **Experience/Education/Achievements:** a centered segmented tab control above a threaded two-column timeline. **Projects page:** a toolbar (search + sort + view toggle + count) over a two-pane layout — filter sidebar left, 3-column card grid right. **Contact:** centered 'Keep In Touch.', a green 'Feel free to reach out!' line, and a centered row of social chips. Vertical rhythm 96–128px between sections.
 
 ## Agent Prompt Guide
 
 **Quick Color Reference**
-- text (primary): #ffffff
-- text (secondary): #aab1f2
-- text (tertiary): #7a83cc
-- background (page): #03081a
-- background (card dark): #020626
-- logo tile / light surface: #f5f6ff
-- border (hairline): #292f66
-- border (subtle): #4d5499
-- accent: #05e0e0
-- primary action: #3d50fc (filled action)
+- text (primary): #FEFEFE / #FFFFFF · secondary: #A0AEC0 · tertiary: #718096
+- background (page): #080808 · card: #111111 · chip: #161616
+- border (hairline): rgba(255,255,255,0.16)
+- accent: #4ADE80 (spring green — text/links/icons/active accents, not fills)
+- selected chip: #FEFEFE fill + #080808 text · selection: #90CDF4 · focus: #4299E1
 
 **Example Component Prompts**
-1. Build a portfolio hero: name in Plain Ultrathin weight 100, 83px, #ffffff, line-height 1.0, letter-spacing -1.66px, left-aligned. Below it a role/tagline in Plain Light 300 at 16px, #aab1f2, line-height 1.8. Primary CTA: 48px-radius pill, #3d50fc fill, white text, 22px×14px padding ('Download résumé'); secondary ghost pill (1px white border) 'Contact'.
-2. Build an education card: #020626 background, 1px #292f66 border, 35px radius, 32px padding. Top row: a 46px Glacier White (#f5f6ff) logo tile (1px #292f66 border, 14px radius) holding the institution logo, beside a title block — degree in Plain weight 400 at 20px white, institution in Plain Light 300 at 14px #aab1f2, date range at 12px #7a83cc. Body: metric line + bullets in Plain Light 300 at 14px. Footer: a wrapped row of skill logo chips.
-3. Build a skills row: wrapped flex row, 9px gaps. Each chip is a 17px-radius pill, transparent fill, 1px #292f66 border, 6px×12px padding, leading with the tool's real logo at 18px then a Plain weight 400 14px label in #aab1f2. Text-only fallback chip for logo-less skills.
-4. Build a "See more" section: render the top 2 records as full cards in a 2-column grid (24px gap). Beneath, a ghost text toggle in #3d50fc — 'See 3 more' with a down chevron — that appends the remaining records as identical cards in the same grid and switches to 'See less'.
-5. Build a section header: an uppercase eyebrow label at 10px, weight 400, 2.5px letter-spacing, #aab1f2 ('ACCOMPLISHMENTS'), then a Plain Ultrathin weight 100 heading at 56px in white with -1.12px tracking, followed by its own card grid.
-
-## Gradient System
-
-Two gradients are signature: a teal-to-cobalt horizontal sweep (linear 90deg, #05a1c9 → #3d50fc) for any full-bleed banner surfaces, and a blue-to-cobalt micro-gradient (#1e78f5 → #3d50fc) for smaller UI accents. Gradients always flow left-to-right and always terminate on Pulse Cobalt (#3d50fc) — never start on it — so energy always reads as moving into the brand color.
+1. Stat row: 4 equal cards, #111111, 16px radius, 1px rgba(255,255,255,0.16) border, 20px padding, icon-left/text-right. Icon in a 48px 12px-radius tile with a subtle green-tinted fill. Number in Display 800 at 32px (#FEFEFE, '50+'), label in system-ui 400 at 14px (#A0AEC0, 'Projects Completed').
+2. Tabbed timeline: a full-radius #161616 bar with three tabs (Experience/Education/Achievements); active tab = #FEFEFE fill + #080808 text, others transparent #A0AEC0. Below, a vertical hairline rail with 10px dots. Each entry: left = white date pill (#FEFEFE fill, #080808 text, full radius) → title Display 800 24px (#FFF) → org in #4ADE80 15px; right = description #A0AEC0 16px + wrapped #161616 full-radius tag pills.
+3. Project card: #111111, 16px radius, hairline. Thumbnail (16px top radius) with a dark '2025' badge top-right and a dark category tag bottom-left. Title Display 800 20px (#FFF); description system-ui 14px #A0AEC0 clamped to 3 lines; #161616 8px-radius tech chips ('Shopify', 'Product Uploads', '+9'); full-width 'View project ↗' button (#161616, 8px radius, white label).
+4. Filter sidebar: #111111 panel, 16px radius, hairline. Group header uppercase 12px #718096 with chevron ('CATEGORY'). Rows = icon + label + right count badge; active row inverts to #FEFEFE fill / #080808 text ('All categories 63'), inactive transparent #A0AEC0 ('Web Development 46').
+5. Gallery toolbar: full-width #111111 search input with magnifier ('Search projects…'), an Onyx 'Newest first ▾' sort pill, a grid/list view toggle (active icon light-inverted), and a right-aligned count 'N projects' in Display 700.
 
 ## Typographic Voice
-
-Plain is a geometric face used in an unusually thin register. Weight 100 at 42–147px is the signature move: most portfolios reach for weight 600–700 headings to project authority, while this system projects authority through restraint — the type almost dissolves, forcing the surrounding negative space and the cobalt accent to carry the visual weight. The 0.25em tracked-out 10px eyebrow label is the counterpoint: tightly tracked large display paired with wide-tracked tiny caps creates dramatic scale contrast. Body copy sits at weight 300 (Light) at 16px — one step lighter than typical — so the whole system leans thin.
+A two-way contrast: a very heavy geometric grotesk at large size for names, headings, stat numbers, and timeline titles (weight 800, tight tracking, trailing period) against quiet neutral system-ui body copy. No light/thin register anywhere — authority comes from mass and scale. The green does the accenting the type refuses to: eyebrow, keyword highlights, link arrows, icons, org names, and `+`/`%` marks.
 
 ## Aesthetic Influences
-
-- **Mercury** — Dark-canvas premium aesthetic with a single vivid accent and thin geometric headlines
-- **Ramp** — Dark platform with a single electric blue accent and ultralight display type on a near-black canvas
-- **Modern Treasury** — Deep navy theme with cobalt primary actions and hairline-border card separation
-- **Linear** — Thin-weight display type, generous radii, and a single vivid accent punching through a quiet dark canvas
-- **Dev portfolios in this idiom** — A weight-100 name hero, logo-led experience/education cards, skill chips with real tool logos, and consistent card grids with progressive "See more" reveals
+- **Brittany Chiang** — dotted-grid device, single-accent-on-dark discipline, quiet-body / loud-accent split
+- **Vercel-adjacent dev portfolios** — true-black canvas, system-ui body, restraint everywhere but the type
+- **Modern SaaS/agency portfolios** — the stat-box row, tabbed timeline, and filterable project gallery with a category/tech sidebar
+- **This site's own moves** — oversized name-with-period, green inline keyword highlighting, and light-invert selected states are the signatures to preserve
 
 ## Quick Start
 
@@ -300,155 +251,124 @@ Plain is a geometric face used in an unusually thin register. Weight 100 at 42�
 ```css
 :root {
   /* Colors */
-  --color-void-navy: #03081a;
-  --color-deep-indigo: #020626;
-  --color-inkline-violet: #292f66;
-  --color-quartz-lavender: #aab1f2;
-  --color-mist-lilac: #7a83cc;
-  --color-dusk-iris: #4d5499;
-  --color-glacier-white: #f5f6ff;
-  --color-pure-white: #ffffff;
-  --color-pulse-cobalt: #3d50fc;
-  --color-signal-teal: #05e0e0;
-  --color-cyan-teal: #05cee0;
-  --color-gradient-teal-blue: #05a1c9;
-  --gradient-gradient-teal-blue: linear-gradient(90deg, rgb(5, 161, 201) 0%, rgb(61, 80, 252) 100%);
+  --color-ink: #080808;
+  --color-pure-black: #000000;
+  --color-coal: #111111;
+  --color-onyx: #161616;
+  --color-spring-green: #4ade80;   /* approximate — verify (maybe #48bb78). Source pattern accent was violet #8b5cf6, mapped here. */
+  --color-green-hover: #38b26b;
+  --color-off-white: #fefefe;      /* also the selected/active chip fill */
+  --color-white: #ffffff;
+  --color-gray-300: #cbd5e0;
+  --color-gray-400: #a0aec0;
+  --color-gray-500: #718096;
+  --color-gray-700: #2d3748;
+  --color-hairline: rgba(255, 255, 255, 0.16);
+  --color-selection: #90cdf4;
+  --color-focus-ring: #4299e1;
 
-  /* Typography — Font Families */
-  --font-times: 'Times', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain: 'Plain', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain-light: 'Plain Light', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain-ultralight: 'Plain Ultralight', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain-ultrathin: 'Plain Ultrathin', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Typography */
+  --font-display: 'Sora', 'Space Grotesk', 'Poppins', ui-sans-serif, system-ui, sans-serif; /* inferred — verify */
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-  /* Typography — Scale */
-  --text-eyebrow: 10px;
-  --leading-eyebrow: 1.2;
-  --tracking-eyebrow: 2.5px;
-  --text-caption: 12px;
-  --leading-caption: 1.5;
-  --text-body: 16px;
-  --leading-body: 1.3;
+  --text-tag: 13px;
+  --text-caption: 14px;
+  --text-body: 16px;      --leading-body: 1.5;
+  --text-body-lg: 20px;
+  --text-nav: 18px;
+  --text-card-title: 20px;
+  --text-timeline-title: 24px;
   --text-subheading: 28px;
-  --leading-subheading: 1.3;
-  --tracking-subheading: -0.56px;
-  --text-heading-sm: 42px;
-  --leading-heading-sm: 1.1;
-  --tracking-heading-sm: -0.84px;
-  --text-heading: 56px;
-  --leading-heading: 1.1;
-  --tracking-heading: -1.12px;
-  --text-heading-lg: 83px;
-  --leading-heading-lg: 1;
-  --tracking-heading-lg: -1.66px;
-  --text-display: 147px;
-  --leading-display: 0.8;
-  --tracking-display: -2.94px;
+  --text-stat: 32px;
+  --text-heading: 48px;
+  --text-heading-lg: 72px;
+  --text-display: 128px;
 
-  /* Typography — Weights */
-  --font-weight-thin: 100;
-  --font-weight-light: 300;
   --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 
   /* Spacing */
-  --spacing-unit: 4px;
-  --spacing-4: 4px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-52: 52px;
-  --spacing-64: 64px;
-  --spacing-104: 104px;
-  --spacing-196: 196px;
+  --spacing-4: 4px;   --spacing-8: 8px;   --spacing-12: 12px; --spacing-16: 16px;
+  --spacing-24: 24px; --spacing-32: 32px; --spacing-48: 48px; --spacing-64: 64px;
+  --spacing-96: 96px; --spacing-128: 128px;
 
   /* Layout */
   --page-max-width: 1200px;
-  --section-gap: 64px;
-  --card-padding: 32px;
-  --element-gap: 9px;
+  --gallery-max-width: 1320px;
+  --section-gap: 96px;   /* 96–128px */
+  --card-padding: 24px;
+  --element-gap: 16px;
 
   /* Border Radius */
-  --radius-sm: 0.864px;
-  --radius-2xl: 17.352px;
-  --radius-3xl: 34.704px;
-  --radius-full: 47.7072px;
-  --radius-full-2: 360px;
+  --radius-tag: 8px;         /* project tech chips */
+  --radius-media: 16px;      /* thumbnails */
+  --radius-tile: 12px;       /* stat icon tiles */
+  --radius-card: 16px;       /* cards, panels, sidebar */
+  --radius-pill: 9999px;     /* tabs, filter rows, date pills, timeline tags */
 
-  /* Named Radii */
-  --radius-tags: 17px;
-  --radius-cards: 35px;
-  --radius-inputs: 35px;
-  --radius-buttons: 48px;
+  /* Shadows */
+  --shadow-focus: 0 0 0 3px rgba(66, 153, 225, 0.6);
 
   /* Surfaces */
-  --surface-void-canvas: #03081a;
-  --surface-deep-indigo-card: #020626;
-  --surface-light-content-surface: #ffffff;
+  --surface-canvas: #080808;
+  --surface-deep: #000000;
+  --surface-card: #111111;
+  --surface-chip: #161616;
+
+  /* Selected / active chip */
+  --chip-selected-bg: #fefefe;
+  --chip-selected-fg: #080808;
 }
+
+::selection { background: var(--color-selection); color: var(--color-off-white); }
+::-webkit-scrollbar { width: 8px; background: #080808; }
+::-webkit-scrollbar-thumb { background: #111111; border-radius: 8px; }
 ```
 
 ### Tailwind v4
 
 ```css
 @theme {
-  /* Colors */
-  --color-void-navy: #03081a;
-  --color-deep-indigo: #020626;
-  --color-inkline-violet: #292f66;
-  --color-quartz-lavender: #aab1f2;
-  --color-mist-lilac: #7a83cc;
-  --color-dusk-iris: #4d5499;
-  --color-glacier-white: #f5f6ff;
-  --color-pure-white: #ffffff;
-  --color-pulse-cobalt: #3d50fc;
-  --color-signal-teal: #05e0e0;
-  --color-cyan-teal: #05cee0;
-  --color-gradient-teal-blue: #05a1c9;
+  --color-ink: #080808;
+  --color-pure-black: #000000;
+  --color-coal: #111111;
+  --color-onyx: #161616;
+  --color-spring-green: #4ade80;   /* approximate — verify */
+  --color-green-hover: #38b26b;
+  --color-off-white: #fefefe;
+  --color-white: #ffffff;
+  --color-gray-300: #cbd5e0;
+  --color-gray-400: #a0aec0;
+  --color-gray-500: #718096;
+  --color-gray-700: #2d3748;
 
-  /* Typography */
-  --font-times: 'Times', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain: 'Plain', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain-light: 'Plain Light', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain-ultralight: 'Plain Ultralight', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-plain-ultrathin: 'Plain Ultrathin', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Sora', 'Space Grotesk', 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-  /* Typography — Scale */
-  --text-eyebrow: 10px;
-  --leading-eyebrow: 1.2;
-  --tracking-eyebrow: 2.5px;
-  --text-caption: 12px;
-  --leading-caption: 1.5;
+  --text-tag: 13px;
+  --text-caption: 14px;
   --text-body: 16px;
-  --leading-body: 1.3;
+  --text-body-lg: 20px;
+  --text-nav: 18px;
+  --text-card-title: 20px;
+  --text-timeline-title: 24px;
   --text-subheading: 28px;
-  --leading-subheading: 1.3;
-  --tracking-subheading: -0.56px;
-  --text-heading-sm: 42px;
-  --leading-heading-sm: 1.1;
-  --tracking-heading-sm: -0.84px;
-  --text-heading: 56px;
-  --leading-heading: 1.1;
-  --tracking-heading: -1.12px;
-  --text-heading-lg: 83px;
-  --leading-heading-lg: 1;
-  --tracking-heading-lg: -1.66px;
-  --text-display: 147px;
-  --leading-display: 0.8;
-  --tracking-display: -2.94px;
+  --text-stat: 32px;
+  --text-heading: 48px;
+  --text-heading-lg: 72px;
+  --text-display: 128px;
 
-  /* Spacing */
-  --spacing-4: 4px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-52: 52px;
-  --spacing-64: 64px;
-  --spacing-104: 104px;
-  --spacing-196: 196px;
+  --spacing-4: 4px;   --spacing-8: 8px;   --spacing-12: 12px; --spacing-16: 16px;
+  --spacing-24: 24px; --spacing-32: 32px; --spacing-48: 48px; --spacing-64: 64px;
+  --spacing-96: 96px; --spacing-128: 128px;
 
-  /* Border Radius */
-  --radius-sm: 0.864px;
-  --radius-2xl: 17.352px;
-  --radius-3xl: 34.704px;
-  --radius-full: 47.7072px;
-  --radius-full-2: 360px;
+  --radius-tag: 8px;
+  --radius-media: 16px;
+  --radius-tile: 12px;
+  --radius-card: 16px;
+  --radius-pill: 9999px;
 }
 ```

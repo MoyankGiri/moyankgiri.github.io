@@ -5,16 +5,17 @@
       <h2>Papers & preprints</h2>
     </div>
 
-    <div class="card-grid">
+    <div class="card-grid card-grid--3">
       {% for pub in site.data.publications %}
-      <article class="dark-card record-card">
-        <div class="org-line">{{ pub.venue }} &middot; {{ pub.date }}</div>
-        <h3>{{ pub.title }}</h3>
-        <p>{{ pub.summary }}</p>
-        {% if pub.github != "" %}
-        <div class="record-links">
-          <a class="link-outline" href="{{ pub.github }}" target="_blank" rel="noopener">Source {% include icon.html name="external" %}</a>
+      <article class="dark-card project-card">
+        <div class="project-card__badges">
+          <span class="badge">{{ pub.venue }}</span>
+          <span class="badge badge--date">{{ pub.date }}</span>
         </div>
+        <h3 class="card-title">{{ pub.title }}</h3>
+        <p class="card-desc">{{ pub.summary }}</p>
+        {% if pub.github != "" %}
+        <a class="view-project-btn" href="{{ pub.github }}" target="_blank" rel="noopener">View project {% include icon.html name="external" %}</a>
         {% endif %}
       </article>
       {% endfor %}

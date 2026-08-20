@@ -1,0 +1,15 @@
+- icon: "briefcase"
+  number: "3+"
+  label: "Years of Experience"
+
+- icon: "folder"
+  number: "14"
+  label: "Projects Shipped"
+
+- icon: "document"
+  number: "4"
+  label: "Publications"
+
+- icon: "award"
+  number: "9.6"
+  label: "M.Tech CGPA"

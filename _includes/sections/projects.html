@@ -1,43 +1,61 @@
-{%- assign featured_projects = site.data.projects | where: "featured", true -%}
-{%- assign other_projects = site.data.projects | where: "featured", false -%}
-{%- assign ordered = featured_projects | concat: other_projects -%}
-{%- assign default_count = featured_projects.size -%}
-{%- assign remaining = other_projects.size -%}
 <section id="projects">
-  <div class="container">
+  <div class="container container--gallery">
     <div class="section-header">
       <div class="eyebrow">Projects</div>
       <h2>Selected work</h2>
-      <p class="section-lead">Applied AI, ML, and systems projects. See more on GitHub.</p>
     </div>
 
-    <div class="card-grid card-grid--3" data-see-more>
-      {% for p in ordered %}
-      <article class="dark-card record-card{% unless p.featured %} is-extra{% endunless %}"{% unless p.featured %} hidden{% endunless %}>
-        <div class="org-line">{{ p.org }}{% if p.date_range != "" %} &middot; {{ p.date_range }}{% endif %}</div>
-        <h3>{{ p.title }}</h3>
-        <p>{{ p.summary }}</p>
-        {% if p.skills.size > 0 %}
-        <div class="chip-row">
-          {% for skill in p.skills %}
-          <span class="skill-chip">{{ skill }}</span>
+    <div class="gallery-toolbar">
+      <label class="gallery-search">
+        {% include icon.html name="search" %}
+        <input type="search" id="gallery-search-input" placeholder="Search projects…" aria-label="Search projects">
+      </label>
+      <button type="button" class="sort-toggle" id="gallery-sort" data-order="desc">
+        <span>Newest first</span>{% include icon.html name="chevron-down" %}
+      </button>
+      <div class="view-toggle" role="group" aria-label="View">
+        <button type="button" class="view-toggle__btn is-active" data-view="grid" aria-label="Grid view">{% include icon.html name="grid" %}</button>
+        <button type="button" class="view-toggle__btn" data-view="list" aria-label="List view">{% include icon.html name="list" %}</button>
+      </div>
+      <div class="gallery-count"><span id="gallery-count-num">{{ site.data.projects.size }}</span> projects</div>
+    </div>
+
+    <div class="gallery-layout">
+      <aside class="filter-sidebar" id="gallery-sidebar">
+        <noscript>Enable JavaScript to filter projects by category and tech stack.</noscript>
+      </aside>
+
+      <div class="gallery-main">
+        <div class="card-grid card-grid--3 gallery-grid" id="gallery-grid" data-view="grid">
+          {% for p in site.data.projects %}
+          <article class="dark-card project-card gallery-card"
+            data-category="{{ p.category }}"
+            data-skills="{{ p.skills | join: '|' }}"
+            data-search="{{ p.title | append: ' ' | append: p.summary | downcase }}">
+            <div class="project-card__badges">
+              <span class="badge">{{ p.category }}</span>
+              {% if p.date_range != "" %}<span class="badge badge--date">{{ p.date_range | split: " - " | last }}</span>{% endif %}
+            </div>
+            <h3 class="card-title">{{ p.title }}</h3>
+            <p class="card-desc">{{ p.summary }}</p>
+            {% if p.skills.size > 0 %}
+            <div class="chip-row tech-chips">
+              {% for skill in p.skills limit:4 %}
+              <span class="tag-pill tag-pill--sm">{{ skill }}</span>
+              {% endfor %}
+              {% if p.skills.size > 4 %}
+              <span class="tag-pill tag-pill--sm overflow-chip">+{{ p.skills.size | minus: 4 }}</span>
+              {% endif %}
+            </div>
+            {% endif %}
+            {% if p.github != "" %}
+            <a class="view-project-btn" href="{{ p.github }}" target="_blank" rel="noopener">View project {% include icon.html name="external" %}</a>
+            {% endif %}
+          </article>
           {% endfor %}
         </div>
-        {% endif %}
-        {% if p.github != "" %}
-        <div class="record-links">
-          <a class="link-outline" href="{{ p.github }}" target="_blank" rel="noopener">Source {% include icon.html name="external" %}</a>
-        </div>
-        {% endif %}
-      </article>
-      {% endfor %}
+        <p class="gallery-empty" id="gallery-empty" hidden>No projects match your filters.</p>
+      </div>
     </div>
-
-    {% if remaining > 0 %}
-    <button type="button" class="see-more-toggle" aria-expanded="false" data-count="{{ remaining }}">
-      <span class="see-more-label">See {{ remaining }} more</span>
-      {% include icon.html name="chevron-down" %}
-    </button>
-    {% endif %}
   </div>
 </section>

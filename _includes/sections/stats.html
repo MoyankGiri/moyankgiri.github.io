@@ -1,0 +1,15 @@
+<section class="stats-section" aria-label="Quick facts">
+  <div class="container">
+    <div class="stat-row">
+      {% for stat in site.data.stats %}
+      <div class="stat-box">
+        <div class="stat-icon-tile">{% include icon.html name=stat.icon %}</div>
+        <div class="stat-text">
+          <div class="stat-number">{{ stat.number }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

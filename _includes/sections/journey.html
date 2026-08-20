@@ -1,0 +1,122 @@
+{%- assign exp_default = 3 -%}
+{%- assign exp_remaining = site.data.experience.size | minus: exp_default -%}
+{%- assign edu_default = 2 -%}
+{%- assign edu_remaining = site.data.education.size | minus: edu_default -%}
+{%- assign ach_default = 4 -%}
+{%- assign ach_remaining = site.data.achievements.size | minus: ach_default -%}
+<section id="journey">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Journey</div>
+      <h2>Where I've been</h2>
+    </div>
+
+    <div class="tab-control" role="tablist">
+      <button type="button" class="tab-btn is-active" data-tab-target="tab-experience" role="tab" aria-selected="true">Experience</button>
+      <button type="button" class="tab-btn" data-tab-target="tab-education" role="tab" aria-selected="false">Education</button>
+      <button type="button" class="tab-btn" data-tab-target="tab-achievements" role="tab" aria-selected="false">Achievements</button>
+    </div>
+
+    <div class="timeline-panel" id="tab-experience" data-tab-panel role="tabpanel">
+      <div class="timeline-rail" data-see-more>
+        {% for job in site.data.experience %}
+        {%- assign is_extra = false -%}
+        {%- if forloop.index0 >= exp_default -%}{%- assign is_extra = true -%}{%- endif -%}
+        <article class="timeline-entry{% if is_extra %} is-extra{% endif %}"{% if is_extra %} hidden{% endif %}>
+          <div class="timeline-entry__rail-dot"></div>
+          <div class="timeline-entry__left">
+            <span class="date-pill">{{ job.duration }}</span>
+            <div class="timeline-entry__title">{{ job.role }}</div>
+            <div class="timeline-entry__org">
+              {% if job.logo != "" %}
+              <span class="logo-tile-sm"><img src="{{ job.logo | relative_url }}" alt=""></span>
+              {% endif %}
+              <span class="hl">{{ job.company }}</span>
+            </div>
+            <div class="timeline-entry__meta">{{ job.location }} &middot; {{ job.mode }}</div>
+          </div>
+          <div class="timeline-entry__right">
+            <ul class="timeline-entry__bullets">
+              {% for bullet in job.bullets %}
+              <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% if exp_remaining > 0 %}
+      <button type="button" class="see-more-link" aria-expanded="false" data-count="{{ exp_remaining }}">
+        <span class="see-more-label">See {{ exp_remaining }} more</span> &rarr;
+      </button>
+      {% endif %}
+    </div>
+
+    <div class="timeline-panel" id="tab-education" data-tab-panel role="tabpanel" hidden>
+      <div class="timeline-rail" data-see-more>
+        {% for edu in site.data.education %}
+        {%- assign is_extra = false -%}
+        {%- if forloop.index0 >= edu_default -%}{%- assign is_extra = true -%}{%- endif -%}
+        <article class="timeline-entry{% if is_extra %} is-extra{% endif %}"{% if is_extra %} hidden{% endif %}>
+          <div class="timeline-entry__rail-dot"></div>
+          <div class="timeline-entry__left">
+            <span class="date-pill">{{ edu.duration }}</span>
+            <div class="timeline-entry__title">{{ edu.degree }}</div>
+            <div class="timeline-entry__org">
+              {% if edu.logo != "" %}
+              <span class="logo-tile-sm"><img src="{{ edu.logo | relative_url }}" alt=""></span>
+              {% endif %}
+              <span class="hl">{{ edu.institution }}</span>
+            </div>
+            {% if edu.grade != "" %}<div class="timeline-entry__meta">{{ edu.grade }}</div>{% endif %}
+          </div>
+          <div class="timeline-entry__right">
+            {% if edu.highlights.size > 0 %}
+            <ul class="timeline-entry__bullets">
+              {% for h in edu.highlights %}
+              <li>{{ h }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            {% if edu.courses.size > 0 %}
+            <div class="chip-row">
+              {% for c in edu.courses %}
+              <span class="tag-pill">{{ c }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% if edu_remaining > 0 %}
+      <button type="button" class="see-more-link" aria-expanded="false" data-count="{{ edu_remaining }}">
+        <span class="see-more-label">See {{ edu_remaining }} more</span> &rarr;
+      </button>
+      {% endif %}
+    </div>
+
+    <div class="timeline-panel" id="tab-achievements" data-tab-panel role="tabpanel" hidden>
+      <div class="timeline-rail" data-see-more>
+        {% for item in site.data.achievements %}
+        {%- assign is_extra = false -%}
+        {%- if forloop.index0 >= ach_default -%}{%- assign is_extra = true -%}{%- endif -%}
+        <article class="timeline-entry timeline-entry--plain{% if is_extra %} is-extra{% endif %}"{% if is_extra %} hidden{% endif %}>
+          <div class="timeline-entry__rail-dot"></div>
+          <div class="timeline-entry__left">
+            <div class="timeline-entry__title">{{ item.title }}</div>
+          </div>
+          <div class="timeline-entry__right">
+            <p>{{ item.description }}</p>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% if ach_remaining > 0 %}
+      <button type="button" class="see-more-link" aria-expanded="false" data-count="{{ ach_remaining }}">
+        <span class="see-more-label">See {{ ach_remaining }} more</span> &rarr;
+      </button>
+      {% endif %}
+    </div>
+  </div>
+</section>
