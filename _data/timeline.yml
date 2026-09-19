@@ -1,0 +1,33 @@
+span_start: "2019-08"
+span_end: "present"
+
+lanes:
+  - lane: "Academics"
+    segments:
+      - label: "B.Tech CSE — PES University"
+        start: "2019-08"
+        end: "2023-06"
+      - label: "M.Tech DSAI — IIT Bhilai"
+        start: "2023-07"
+        end: "2025-06"
+
+  - lane: "Experience"
+    segments:
+      - label: "HPE — Intern, HPCTY Program"
+        start: "2022-02"
+        end: "2022-07"
+      - label: "HPE — R&D Trainee, Storage"
+        start: "2023-01"
+        end: "2023-07"
+      - label: "IIT Bhilai — Teaching Assistant"
+        start: "2023-08"
+        end: "2024-06"
+      - label: "Ohio State — Research Scholar"
+        start: "2024-07"
+        end: "2025-02"
+      - label: "IIT Bhilai — Researcher"
+        start: "2025-02"
+        end: "2025-05"
+      - label: "ZS Associates — Advanced DS Associate Consultant"
+        start: "2025-06"
+        end: "present"

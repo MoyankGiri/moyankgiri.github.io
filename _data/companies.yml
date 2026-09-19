@@ -1,0 +1,17 @@
+- name: "ZS Associates"
+  logo: "/assets/img/zslogo.png"
+
+- name: "Indian Institute of Technology, Bhilai"
+  logo: "/assets/img/IITBhilaiExplogo.png"
+
+- name: "The Ohio State University"
+  logo: "/assets/img/osulogo.png"
+
+- name: "Hewlett Packard Enterprise"
+  logo: "/assets/img/hpelogo.png"
+
+- name: "Muxable Labs"
+  logo: "/assets/img/muxablelogo.jpeg"
+
+- name: "PES University"
+  logo: "/assets/img/peslogo.png"

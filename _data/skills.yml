@@ -1,69 +1,70 @@
 - category: "Languages & Tools"
   items:
-    - { name: "Python", icon: "python" }
-    - { name: "SQL", icon: "" }
-    - { name: "AWS", icon: "amazonaws" }
-    - { name: "Azure Cloud", icon: "microsoftazure" }
-    - { name: "Databricks", icon: "databricks" }
-    - { name: "Docker", icon: "docker" }
-    - { name: "Kubernetes", icon: "kubernetes" }
-    - { name: "gRPC", icon: "grpc" }
-    - { name: "Prometheus", icon: "prometheus" }
-    - { name: "Grafana", icon: "grafana" }
-    - { name: "OpenAI API", icon: "openai" }
-    - { name: "Google Gemini API", icon: "googlegemini" }
-    - { name: "PowerBI", icon: "powerbi" }
-    - { name: "GitHub Actions", icon: "githubactions" }
-    - { name: "Hadoop", icon: "apachehadoop" }
-    - { name: "Spark", icon: "apachespark" }
-    - { name: "Kafka", icon: "apachekafka" }
-    - { name: "Storm", icon: "apachestorm" }
-    - { name: "MongoDB", icon: "mongodb" }
-    - { name: "Qdrant VectorDB", icon: "qdrant" }
-    - { name: "Hive", icon: "" }
-    - { name: "Render", icon: "render" }
-    - { name: "Android", icon: "android" }
-    - { name: "Firebase", icon: "firebase" }
-    - { name: "Java", icon: "openjdk" }
-    - { name: "R", icon: "r" }
-    - { name: "C", icon: "" }
-    - { name: "Linux", icon: "linux" }
+    - { name: "Python", icon: "python", months: 96 }
+    - { name: "SQL", icon: "", months: 8 }
+    - { name: "AWS", icon: "amazonaws", months: 26 }
+    - { name: "Azure Cloud", icon: "microsoftazure", months: 2 }
+    - { name: "Databricks", icon: "databricks", months: 8 }
+    - { name: "Docker", icon: "docker", months: 27 }
+    - { name: "Kubernetes", icon: "kubernetes", months: 17 }
+    - { name: "gRPC", icon: "grpc", months: 6 }
+    - { name: "Prometheus", icon: "prometheus", months: 6 }
+    - { name: "Grafana", icon: "grafana", months: 6 }
+    - { name: "OpenAI API", icon: "openai", months: 8 }
+    - { name: "Google Gemini API", icon: "googlegemini", months: 10 }
+    - { name: "PowerBI", icon: "powerbi", months: 2 }
+    - { name: "GitHub Actions", icon: "githubactions", months: 2 }
+    - { name: "Hadoop", icon: "apachehadoop", months: 11 }
+    - { name: "Spark", icon: "apachespark", months: 11 }
+    - { name: "Kafka", icon: "apachekafka", months: 11 }
+    - { name: "Storm", icon: "apachestorm", months: 11 }
+    - { name: "MongoDB", icon: "mongodb", months: 6 }
+    - { name: "Qdrant VectorDB", icon: "qdrant", months: 4 }
+    - { name: "Hive", icon: "", months: 11 }
+    - { name: "Render", icon: "render", months: 2 }
+    - { name: "Android", icon: "android", months: 4 }
+    - { name: "Firebase", icon: "firebase", months: 4 }
+    - { name: "Java", icon: "openjdk", months: 15 }
+    - { name: "R", icon: "r", months: 0 }
+    - { name: "C", icon: "", months: 0 }
+    - { name: "Linux", icon: "linux", months: 94 }
 
 - category: "DL / ML Techniques"
   items:
-    - { name: "LLM", icon: "" }
-    - { name: "NLP", icon: "" }
-    - { name: "Agentic AI", icon: "" }
-    - { name: "Generative AI", icon: "" }
-    - { name: "Data Science", icon: "" }
-    - { name: "Advanced RAG", icon: "" }
-    - { name: "Machine Learning", icon: "" }
-    - { name: "Deep Learning", icon: "" }
-    - { name: "Computer Vision", icon: "" }
-    - { name: "Split Learning", icon: "" }
-    - { name: "Federated Learning", icon: "" }
-    - { name: "Explainable AI", icon: "" }
-    - { name: "CNN", icon: "" }
-    - { name: "LSTM / RNN", icon: "" }
-    - { name: "ETL", icon: "" }
-    - { name: "Data Modeling & Mining", icon: "" }
-    - { name: "Supervised & Unsupervised Learning", icon: "" }
-    - { name: "Feature Engineering", icon: "" }
+    - { name: "LLM", icon: "", months: 25 }
+    - { name: "NLP", icon: "", months: 33 }
+    - { name: "Agentic AI", icon: "", months: 10 }
+    - { name: "Generative AI", icon: "", months: 22 }
+    - { name: "Data Science", icon: "", months: 53 }
+    - { name: "Advanced RAG", icon: "", months: 12 }
+    - { name: "Machine Learning", icon: "", months: 21 }
+    - { name: "Deep Learning", icon: "", months: 38 }
+    - { name: "Computer Vision", icon: "", months: 31 }
+    - { name: "Split Learning", icon: "", months: 4 }
+    - { name: "Federated Learning", icon: "", months: 15 }
+    - { name: "Explainable AI", icon: "", months: 10 }
+    - { name: "CNN", icon: "", months: 31 }
+    - { name: "LSTM / RNN", icon: "", months: 6 }
+    - { name: "ETL", icon: "", months: 6 }
+    - { name: "Distributed DL", icon: "", months: 4 }
+    - { name: "Data Modeling & Mining", icon: "", months: 35 }
+    - { name: "Supervised & Unsupervised Learning", icon: "", months: 40 }
+    - { name: "Feature Engineering", icon: "", months: 34 }
 
 - category: "Python Libraries"
   items:
-    - { name: "HuggingFace", icon: "huggingface" }
-    - { name: "PyTorch", icon: "pytorch" }
-    - { name: "Transformers", icon: "" }
-    - { name: "LangGraph", icon: "" }
-    - { name: "LangChain", icon: "langchain" }
-    - { name: "TensorFlow", icon: "tensorflow" }
-    - { name: "Scikit-learn", icon: "scikitlearn" }
-    - { name: "OpenCV", icon: "opencv" }
-    - { name: "Pandas", icon: "pandas" }
-    - { name: "Matplotlib", icon: "" }
-    - { name: "NumPy", icon: "numpy" }
-    - { name: "LIME", icon: "" }
-    - { name: "FastAPI", icon: "fastapi" }
-    - { name: "Requests", icon: "" }
-    - { name: "BeautifulSoup", icon: "" }
+    - { name: "HuggingFace", icon: "huggingface", months: 15 }
+    - { name: "PyTorch", icon: "pytorch", months: 18 }
+    - { name: "Transformers", icon: "", months: 8 }
+    - { name: "LangGraph", icon: "", months: 2 }
+    - { name: "LangChain", icon: "langchain", months: 2 }
+    - { name: "TensorFlow", icon: "tensorflow", months: 25 }
+    - { name: "Scikit-learn", icon: "scikitlearn", months: 10 }
+    - { name: "OpenCV", icon: "opencv", months: 14 }
+    - { name: "Pandas", icon: "pandas", months: 0 }
+    - { name: "Matplotlib", icon: "", months: 43 }
+    - { name: "NumPy", icon: "numpy", months: 43 }
+    - { name: "LIME", icon: "", months: 10 }
+    - { name: "FastAPI", icon: "fastapi", months: 6 }
+    - { name: "Requests", icon: "", months: 21 }
+    - { name: "BeautifulSoup", icon: "", months: 13 }

@@ -18,7 +18,44 @@
     });
   }
 
+  // ---------- Tabbed timeline ----------
+  var tabBtns = document.querySelectorAll(".tab-btn[data-tab-target]");
+  var tabPanels = document.querySelectorAll("[data-tab-panel]");
+
+  function activateTab(targetId) {
+    if (!targetId) return;
+    tabBtns.forEach(function (b) {
+      var isActive = b.getAttribute("data-tab-target") === targetId;
+      b.classList.toggle("is-active", isActive);
+      b.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+    tabPanels.forEach(function (panel) {
+      if (panel.id === targetId) {
+        panel.removeAttribute("hidden");
+      } else {
+        panel.setAttribute("hidden", "");
+      }
+    });
+  }
+
+  tabBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      activateTab(btn.getAttribute("data-tab-target"));
+    });
+  });
+
+  // ---------- Nav ----------
   var navLinks = document.querySelectorAll(".nav-links a[href^='#']");
+
+  navLinks.forEach(function (link) {
+    var tabTarget = link.getAttribute("data-tab");
+    if (tabTarget) {
+      link.addEventListener("click", function () {
+        activateTab(tabTarget);
+      });
+    }
+  });
+
   var sections = Array.prototype.map
     .call(navLinks, function (link) {
       return document.querySelector(link.getAttribute("href"));
@@ -30,10 +67,21 @@
       function (entries) {
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
+          if (entry.target.id === "journey") {
+            var activeTabBtn = document.querySelector(".tab-btn.is-active");
+            var activeTab = activeTabBtn ? activeTabBtn.getAttribute("data-tab-target") : null;
+            navLinks.forEach(function (link) {
+              link.classList.toggle(
+                "is-active",
+                link.getAttribute("href") === "#journey" && link.getAttribute("data-tab") === activeTab
+              );
+            });
+            return;
+          }
           navLinks.forEach(function (link) {
             link.classList.toggle(
               "is-active",
-              link.getAttribute("href") === "#" + entry.target.id
+              link.getAttribute("href") === "#" + entry.target.id && !link.getAttribute("data-tab")
             );
           });
         });
@@ -45,28 +93,6 @@
       observer.observe(section);
     });
   }
-
-  // ---------- Tabbed timeline ----------
-  var tabBtns = document.querySelectorAll(".tab-btn[data-tab-target]");
-  var tabPanels = document.querySelectorAll("[data-tab-panel]");
-
-  tabBtns.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var targetId = btn.getAttribute("data-tab-target");
-      tabBtns.forEach(function (b) {
-        var isActive = b === btn;
-        b.classList.toggle("is-active", isActive);
-        b.setAttribute("aria-selected", isActive ? "true" : "false");
-      });
-      tabPanels.forEach(function (panel) {
-        if (panel.id === targetId) {
-          panel.removeAttribute("hidden");
-        } else {
-          panel.setAttribute("hidden", "");
-        }
-      });
-    });
-  });
 
   // ---------- Timeline "see more" ----------
   document.querySelectorAll(".see-more-link").forEach(function (btn) {
@@ -220,6 +246,29 @@
           b.classList.toggle("is-active", b === btn);
         });
       });
+    });
+  }
+
+  // ---------- Career Gantt chart ----------
+  var gantt = document.getElementById("gantt-chart");
+  if (gantt) {
+    function toMonthIndex(value) {
+      if (value === "present") value = new Date().toISOString().slice(0, 7);
+      var parts = value.split("-");
+      return parseInt(parts[0], 10) * 12 + (parseInt(parts[1], 10) - 1);
+    }
+
+    var spanStart = toMonthIndex(gantt.getAttribute("data-span-start"));
+    var spanEnd = toMonthIndex(gantt.getAttribute("data-span-end"));
+    var totalMonths = spanEnd - spanStart;
+
+    gantt.querySelectorAll(".gantt-segment").forEach(function (seg) {
+      var start = toMonthIndex(seg.getAttribute("data-start"));
+      var end = toMonthIndex(seg.getAttribute("data-end"));
+      var left = ((start - spanStart) / totalMonths) * 100;
+      var width = ((end - start) / totalMonths) * 100;
+      seg.style.left = left + "%";
+      seg.style.width = Math.max(width, 2) + "%";
     });
   }
 })();

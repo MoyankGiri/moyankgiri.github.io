@@ -13,7 +13,7 @@
     <nav aria-label="Primary">
       <ul class="nav-links">
         {% for item in site_data.nav %}
-        <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+        <li><a href="{{ item.href }}"{% if item.tab %} data-tab="{{ item.tab }}"{% endif %}>{{ item.label }}</a></li>
         {% endfor %}
       </ul>
     </nav>

@@ -21,13 +21,24 @@
         {% endif %}
       {% endfor %}
     </div>
-    {% if s.avatar %}
-    <div class="about-portrait-wrap">
-      <div class="dotted-grid-motif" aria-hidden="true"></div>
-      <div class="about-portrait">
-        <img src="{{ s.avatar | relative_url }}" alt="{{ s.name }}">
-      </div>
+
+    <div class="word-cloud" aria-hidden="true">
+      <span class="cloud-word cloud-word--major" style="top:6%; left:42%; font-size:36px; font-weight:800; animation-delay:0s;">AI</span>
+      <span class="cloud-word cloud-word--major" style="top:20%; left:6%; font-size:20px; font-weight:700; animation-delay:0.6s;">Data Science</span>
+      <span class="cloud-word cloud-word--minor" style="top:2%; left:68%; font-size:12px; font-weight:500; animation-delay:1.2s;">Explainable AI</span>
+      <span class="cloud-word cloud-word--minor" style="top:10%; left:2%; font-size:14px; font-weight:500; animation-delay:1.8s;">Agentic AI</span>
+      <span class="cloud-word cloud-word--minor" style="top:16%; left:78%; font-size:15px; font-weight:500; animation-delay:0.3s;">RAG</span>
+      <span class="cloud-word cloud-word--minor" style="top:32%; left:34%; font-size:13px; font-weight:500; animation-delay:0.9s;">GenAI</span>
+      <span class="cloud-word cloud-word--major" style="top:36%; left:56%; font-size:17px; font-weight:600; animation-delay:1.5s;">Machine Learning</span>
+      <span class="cloud-word cloud-word--minor" style="top:44%; left:82%; font-size:17px; font-weight:600; animation-delay:2.1s;">NLP</span>
+      <span class="cloud-word cloud-word--major" style="top:54%; left:12%; font-size:27px; font-weight:800; animation-delay:0.15s;">LLM</span>
+      <span class="cloud-word cloud-word--minor" style="top:50%; left:46%; font-size:12px; font-weight:500; animation-delay:0.75s;">Cloud</span>
+      <span class="cloud-word cloud-word--major" style="top:68%; left:38%; font-size:18px; font-weight:600; animation-delay:1.35s;">Deep Learning</span>
+      <span class="cloud-word cloud-word--minor" style="top:62%; left:70%; font-size:15px; font-weight:600; animation-delay:1.95s;">Python</span>
+      <span class="cloud-word cloud-word--minor" style="top:78%; left:10%; font-size:13px; font-weight:500; animation-delay:0.45s;">Computer Vision</span>
+      <span class="cloud-word cloud-word--minor" style="top:76%; left:74%; font-size:12px; font-weight:500; animation-delay:1.05s;">Federated Learning</span>
+      <span class="cloud-word cloud-word--minor" style="top:90%; left:28%; font-size:13px; font-weight:500; animation-delay:1.65s;">MLOps</span>
+      <span class="cloud-word cloud-word--minor" style="top:88%; left:56%; font-size:14px; font-weight:500; animation-delay:2.25s;">Research</span>
     </div>
-    {% endif %}
   </div>
 </section>

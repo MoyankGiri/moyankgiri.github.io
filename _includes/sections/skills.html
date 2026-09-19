@@ -6,10 +6,35 @@
     </div>
 
     {% for group in site.data.skills %}
+    {%- assign ranked = group.items | where_exp: "item", "item.months > 0" | sort: "months" | reverse -%}
+    {%- assign unranked = group.items | where_exp: "item", "item.months == 0" -%}
+    {%- assign top = ranked | slice: 0, 8 -%}
+    {%- assign overflow = ranked | slice: 8, 999 -%}
+    {%- assign chip_items = overflow | concat: unranked -%}
+    {%- assign max_months = top[0].months -%}
     <div class="skill-group">
       <div class="skill-group-title">{{ group.category }}</div>
+
+      <div class="skill-bars">
+        {% for item in top %}
+        {%- assign pct = item.months | times: 100.0 | divided_by: max_months -%}
+        <div class="skill-bar-row">
+          <span class="skill-bar-label">
+            {% if item.icon != "" %}
+            <img src="https://cdn.simpleicons.org/{{ item.icon }}/4ade80" alt="" loading="lazy" onerror="this.remove()">
+            {% endif %}
+            {{ item.name }}
+          </span>
+          <span class="skill-bar-track"><span class="skill-bar-fill" style="width: {{ pct }}%;"></span></span>
+          <span class="skill-bar-months">{{ item.months }} mo</span>
+        </div>
+        {% endfor %}
+      </div>
+
+      {% if chip_items.size > 0 %}
+      <div class="skill-also-label">Also worked with</div>
       <div class="chip-row">
-        {% for item in group.items %}
+        {% for item in chip_items %}
         <span class="tag-pill skill-chip">
           {% if item.icon != "" %}
           <img src="https://cdn.simpleicons.org/{{ item.icon }}/4ade80" alt="" loading="lazy" onerror="this.remove()">
@@ -18,6 +43,7 @@
         </span>
         {% endfor %}
       </div>
+      {% endif %}
     </div>
     {% endfor %}
   </div>

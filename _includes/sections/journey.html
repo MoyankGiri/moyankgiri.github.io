@@ -11,6 +11,22 @@
       <h2>Where I've been</h2>
     </div>
 
+    {%- assign tl = site.data.timeline -%}
+    <div class="gantt-chart" id="gantt-chart" data-span-start="{{ tl.span_start }}" data-span-end="{{ tl.span_end }}" aria-hidden="true">
+      {% for lane in tl.lanes %}
+      <div class="gantt-lane">
+        <div class="gantt-lane-label">{{ lane.lane }}</div>
+        <div class="gantt-track">
+          {% for seg in lane.segments %}
+          <div class="gantt-segment{% if lane.lane == 'Experience' %} gantt-segment--accent{% endif %}" data-start="{{ seg.start }}" data-end="{{ seg.end }}" title="{{ seg.label }}">
+            <span>{{ seg.label }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
     <div class="tab-control" role="tablist">
       <button type="button" class="tab-btn is-active" data-tab-target="tab-experience" role="tab" aria-selected="true">Experience</button>
       <button type="button" class="tab-btn" data-tab-target="tab-education" role="tab" aria-selected="false">Education</button>

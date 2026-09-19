@@ -6,23 +6,47 @@
   | replace: "Ohio State", '<span class="hl">Ohio State</span>'
   | replace: "HPE", '<span class="hl">HPE</span>' -%}
 <section class="hero" id="top">
-  <div class="container hero-inner">
-    <div class="hero-grid-motif" aria-hidden="true"></div>
-    <div class="eyebrow hero-eyebrow">Hey there, I'm</div>
-    <h1 class="hero-name">{{ s.name }}<span class="hero-period">.</span></h1>
-    <p class="hero-role"><strong>{{ s.role }}</strong></p>
-    <p class="hero-subtitle">{{ subtitle }}</p>
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <div class="hero-grid-motif" aria-hidden="true"></div>
+      <div class="eyebrow hero-eyebrow">Hey there, I'm</div>
+      <h1 class="hero-name">{{ s.name }}<span class="hero-period">.</span></h1>
+      <p class="hero-role"><strong>{{ s.role }}</strong></p>
+      <p class="hero-subtitle">{{ subtitle }}</p>
 
-    <div class="hero-status-lines">
-      <p><span class="hl">{{ s.location }}</span> &middot; open to conversations on data science and AI</p>
+      <div class="hero-status-lines">
+        <p><span class="hl">{{ s.location }}</span> &middot; open to conversations on data science and AI</p>
+      </div>
+
+      <div class="hero-actions">
+        <a class="social-btn" href="{{ s.resume_pdf | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="download" %} Résumé</a>
+        <a class="social-btn" href="{{ s.github }}" target="_blank" rel="me noopener">{% include icon.html name="github" %} GitHub</a>
+        <a class="social-btn" href="{{ s.linkedin }}" target="_blank" rel="me noopener">{% include icon.html name="linkedin" %} LinkedIn</a>
+        <a class="social-btn" href="mailto:{{ s.email }}">{% include icon.html name="mail" %} Email</a>
+        <a class="social-btn" href="{{ s.whatsapp }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %} WhatsApp</a>
+      </div>
+
+      {% if site.data.companies.size > 0 %}
+      <div class="logo-marquee" aria-hidden="true">
+        <div class="logo-marquee__track">
+          {% for c in site.data.companies %}
+          <img src="{{ c.logo | relative_url }}" alt="" loading="lazy">
+          {% endfor %}
+          {% for c in site.data.companies %}
+          <img src="{{ c.logo | relative_url }}" alt="" loading="lazy">
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
     </div>
 
-    <div class="hero-actions">
-      <a class="social-btn" href="{{ s.resume_pdf | relative_url }}" target="_blank" rel="noopener">{% include icon.html name="download" %} Résumé</a>
-      <a class="social-btn" href="{{ s.github }}" target="_blank" rel="me noopener">{% include icon.html name="github" %} GitHub</a>
-      <a class="social-btn" href="{{ s.linkedin }}" target="_blank" rel="me noopener">{% include icon.html name="linkedin" %} LinkedIn</a>
-      <a class="social-btn" href="mailto:{{ s.email }}">{% include icon.html name="mail" %} Email</a>
-      <a class="social-btn" href="{{ s.whatsapp }}" target="_blank" rel="noopener">{% include icon.html name="whatsapp" %} WhatsApp</a>
+    {% if s.avatar %}
+    <div class="hero-visual">
+      <div class="dotted-grid-motif" aria-hidden="true"></div>
+      <div class="hero-portrait">
+        <img src="{{ s.avatar | relative_url }}" alt="{{ s.name }}">
+      </div>
     </div>
+    {% endif %}
   </div>
 </section>
